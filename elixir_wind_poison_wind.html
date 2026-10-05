@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>சமரச சுத்த சன்மார்க்கம் - Vallalar | வள்ளலார் | அருட்பெருஞ்சோதி</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;700&family=Tiro+Tamil:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-saffron: #ffea00; /* True Ochre/Saffron - காவி */
+            --color-gold: #FFD700;    /* True Royal Gold */
+            --color-dark: #333333;
+            --color-light-bg: #f3f3f3;
+            --font-heading: 'Tiro Tamil', serif;
+            --font-body: 'Noto Sans Tamil', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-dark);
+            background-color: var(--color-light-bg);
+            margin: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            color: var(--color-saffron);
+            text-align: center;
+            margin-top: 0;
+        }
+
+        a { color: var(--color-saffron); text-decoration: none; }
+        a:hover { text-decoration: underline; color: var(--color-gold); }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 700;
+            font-size: 1.1em;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover {
+            border-bottom: 2px solid var(--color-gold);
+            color: var(--color-gold) !important;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(252, 248, 243, 0.8), rgba(252, 248, 243, 0.8)), url('placeholder-image.jpg') center/cover no-repeat;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-attachment: fixed;
+        }
+        .hero h1 { color: var(--color-saffron); font-size: 3.5em; margin-bottom: 10px; }
+        .hero p { font-size: 1.5em; color: var(--color-dark); font-style: italic; }
+
+        .section { padding: 60px 0; border-bottom: 1px dashed #DDD; }
+
+        .content-card {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .song-list { list-style: none; padding: 0; }
+        .song-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border-left: 5px solid var(--color-saffron);
+            background-color: #FFF;
+        }
+        .song-item h3 { text-align: left; margin-bottom: 10px; }
+        .song-text { white-space: pre-wrap; font-size: 0.7em; }
+
+        .footer {
+            background-color: var(--color-saffron);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+        .footer a { color: var(--color-gold); }
+
+        .glow-text {
+            color: var(--color-saffron);
+            text-shadow: 0 0 8px rgba(255, 153, 51, 0.8), 0 0 16px rgba(255, 153, 51, 0.5);
+        }
+        .neon-text-red {
+            color: #ff073a;
+            text-shadow: 0 0 5px #ff073a, 0 0 10px #ff073a, 0 0 20px #ff073a;
+        }
+        .glow-border {
+            border: 1px solid var(--color-saffron);
+            box-shadow: 0 0 10px rgba(255, 153, 51, 0.6);
+        }
+        .screen-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .screen-box {
+            padding: 25px 10px;
+            text-align: center;
+            font-weight: 700;
+            border-radius: 6px;
+        }
+        .heat-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .heat-fill {
+            width: 75%;
+            height: 100%;
+            background: linear-gradient(90deg, #ffea00, #f00);
+            animation: heatPulse 2s infinite alternate;
+        }
+        @keyframes heatPulse {
+            from { opacity: 0.6; }
+            to   { opacity: 1; }
+        }
+
+        .article-container {
+            max-width:800px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            padding: 40px;
+            margin: 60px auto;
+        }
+        .article-title { font-size: 1.2rem; font-weight: bold; }
+        .article-meta { color: #6c757d; font-size: 0.9rem; margin-bottom: 20px; }
+        .article-content p { text-align: justify; line-height: 1.8; }
+
+        /* ============================================= */
+        /* === Nectar Wind Report Widget (NEW/FIXED) ==== */
+        /* ============================================= */
+        .widget-wrap {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .card {
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 28px;
+            max-width: 480px;
+            width: 100%;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+            border: 1px solid #eee;
+            border-top: 4px solid var(--color-saffron);
+        }
+        .card h1 { font-size: 1.4em; margin-bottom: 2px; }
+        .card h2.sub {
+            font-size: 1em;
+            margin-top: 0;
+            color: var(--color-dark);
+            font-weight: 400;
+        }
+        .card .section { padding: 14px 0; border-bottom: none; }
+        .card label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 700;
+            color: var(--color-dark);
+        }
+        .card input[type="date"], .card input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+        .quick-btns {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        .quick-btns button {
+            flex: 1;
+            min-width: 100px;
+            padding: 10px 6px;
+            border: 1px solid var(--color-saffron);
+            border-radius: 8px;
+            background: #fff8ee;
+            color: var(--color-dark);
+            cursor: pointer;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .quick-btns button:hover { background: var(--color-saffron); color: #fff; }
+
+        .tabs { display: flex; gap: 6px; margin-bottom: 14px; }
+        .tab-btn {
+            flex: 1;
+            padding: 10px 6px;
+            border: 1px solid #ddd;
+            border-radius: 8px 8px 0 0;
+            background: #f1f1f1;
+            color: #666;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .tab-btn.active {
+            background: #fff;
+            border-bottom: 3px solid var(--color-saffron);
+            color: var(--color-saffron);
+            font-weight: bold;
+        }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        .coord-row { display: flex; gap: 10px; margin-bottom: 10px; }
+        .coord-row > div { flex: 1; }
+        .coord-row label { font-size: 0.85em; margin-bottom: 4px; }
+
+        #locationBtn, #manualBtn, #resetBtn {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.05em;
+            cursor: pointer;
+            margin-top: 8px;
+            transition: transform 0.15s, background 0.2s;
+        }
+        #locationBtn, #manualBtn {
+            background: var(--color-saffron);
+            color: #fff;
+            font-weight: bold;
+        }
+        #locationBtn:hover, #manualBtn:hover { transform: scale(1.02); background: var(--color-gold); color: var(--color-dark); }
+        #locationBtn:disabled, #manualBtn:disabled { opacity: 0.6; cursor: not-allowed; }
+        #resetBtn { background: #eee; color: var(--color-dark); display: none; }
+        #resetBtn:hover { background: #ddd; }
+
+        #status {
+            text-align: center;
+            margin-top: 12px;
+            min-height: 20px;
+            font-size: 0.95em;
+            color: var(--color-dark);
+        }
+        #result {
+            display: none;
+            margin-top: 20px;
+            background: #fdf6ec;
+            border: 1px solid #f0dcc0;
+            border-radius: 10px;
+            padding: 18px;
+            line-height: 1.7;
+        }
+        #result .row {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed #e0cba8;
+            padding: 6px 0;
+            color: var(--color-dark);
+        }
+        #result .row:last-child { border-bottom: none; }
+        .code {
+            background: #fff;
+            border: 1px solid #e0cba8;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-family: monospace;
+            color: var(--color-dark);
+        }
+        .spinner {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 3px solid rgba(0,0,0,0.15);
+            border-top-color: var(--color-saffron);
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            vertical-align: middle;
+            margin-right: 6px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        small.hint {
+            display: block;
+            margin-top: 6px;
+            color: #888;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top" style="background-color: var(--color-saffron); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+            <div class="container-fluid container">
+                <a class="navbar-brand text-white" href="index.html" style="font-family: var(--font-heading); font-size: 1.5em;"> அருட்பெருஞ்சோதி</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color: white;">
+                    <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=%270 0 30 30%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath stroke=%27white%27 stroke-width=%272%27 linecap=%27round%27 linejoin=%27round%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="info.html">Info About this website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+ 
+    <!-- ===== Nectar Wind Report Widget ===== -->
+    <div class="widget-wrap">
+        <div class="card animate__animated animate__fadeIn">
+          <h1>✨ Nectar Wind Report ✨</h1>
+          <h2 class="sub">✨ அமுத காற்று அறிக்கை ✨</h2>
+
+          <div class="section">
+            <label>📅 Select a date | தேதியைத் தேர்ந்தெடுக்கவும்</label>
+            <input type="date" id="dateInput" />
+            <div class="quick-btns">
+              <button data-offset="-1">நேற்று<br>Yesterday</button>
+              <button data-offset="0">இன்று<br>Today</button>
+              <button data-offset="1">நாளை<br>Tomorrow</button>
+            </div>
+          </div>
+
+          <div class="section">
+            <label>📍 Choose Location Method | இருப்பிட முறையைத் தேர்ந்தெடுக்கவும்</label>
+            <div class="tabs">
+              <button class="tab-btn active" data-tab="autoTab">🌍 Auto Detect</button>
+              <button class="tab-btn" data-tab="manualTab">✍️ Manual Entry</button>
+            </div>
+
+            <div class="tab-content active" id="autoTab">
+              <button id="locationBtn">📍 Send Location & Get Report<br><small>இருப்பிடத்தைப் பகிரவும்</small></button>
+              <small class="hint">Uses your device's GPS/Wi-Fi location automatically.</small>
+            </div>
+
+            <div class="tab-content" id="manualTab">
+              <div class="coord-row">
+                <div>
+                  <label>Latitude | அட்சரேகை</label>
+                  <input type="number" id="latInput" step="any" placeholder="e.g. 11.54" />
+                </div>
+                <div>
+                  <label>Longitude | நீளரேகை</label>
+                  <input type="number" id="lonInput" step="any" placeholder="e.g. 79.54" />
+                </div>
+              </div>
+              <button id="manualBtn">✅ Use These Coordinates & Get Report</button>
+              <small class="hint">Enter decimal degrees (e.g., சத்திய ஞான சபை: 11.54, 79.54). Use negative values for South/West.</small>
+            </div>
+          </div>
+
+          <button id="resetBtn">🔄 Start Over | மீண்டும் தொடங்கு</button>
+
+          <div id="status"></div>
+          <div id="result"></div>
+        </div>
+    </div>
+
+    <!-- ===== Info Section (fixes broken #history nav link) ===== -->
+   <section id="history" class="section">
+        <div class="container">
+            <div class="content-card">
+                <h2>அமுதக்காற்று விஷக்காற்று பற்றி</h2>
+                <p style="text-align: justify;">
+                   விஷக்காற்று ⚫கருமை வண்ணமாயும் 🔴செம்மை வண்ணமாயும் இரண்டு பாகமாய்ப் பிரியும். 
+                   இவைகளை இராகு கேதுக்களென வழங்குகின்றனர். அமுதக்காற்று 🌍 இவ்வண்டத்தில் 🌃 இரவில் அருணோதயந் 
+                   தொடங்கி 🌅உதயபரியந்தம் வியாபகமாய் இருக்கின்றது.அக்காலத்தில் ஜீவர்கள் நன்முயற்சியி லிருப்பது 
+                   விசேஷ நலம். 🌏இவ்வண்டத்திலும் 👩🏻‍🤝‍👨🏽ஜீவர்களிடத்திலும் விஷக்காற்று⚫🔴💨 வியாபகமாயுள்ளது (More time) 
+                   ஆதலால், ஜீவகோடிராசிகள் சொற்பத்தில் அடிக்கடி நஷ்டப்பட்டுக் கொண்டிருக்கின்றன. 📝சிதம்பரம் ராமலிங்கம்✅
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 அருட்பெருஞ்சோதி | All Rights Reserved</p>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+  const API_URL = "https://api.sunrise-sunset.org/json";
+
+  const dateInput = document.getElementById('dateInput');
+  const locationBtn = document.getElementById('locationBtn');
+  const manualBtn = document.getElementById('manualBtn');
+  const resetBtn = document.getElementById('resetBtn');
+  const statusEl = document.getElementById('status');
+  const resultEl = document.getElementById('result');
+  const latInput = document.getElementById('latInput');
+  const lonInput = document.getElementById('lonInput');
+
+  // Tab switching
+  document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      btn.classList.add('active');
+      document.getElementById(btn.dataset.tab).classList.add('active');
+      setStatus('');
+    });
+  });
+
+  function toISODate(d) {
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const dd = String(d.getDate()).padStart(2, '0');
+    return `${yyyy}-${mm}-${dd}`;
+  }
+
+  function toDisplayDate(d) {
+    const dd = String(d.getDate()).padStart(2, '0');
+    const mm = String(d.getMonth() + 1).padStart(2, '0');
+    const yyyy = d.getFullYear();
+    return `${dd}-${mm}-${yyyy}`;
+  }
+
+  // Default to today
+  dateInput.value = toISODate(new Date());
+
+  // Quick date buttons
+  document.querySelectorAll('.quick-btns button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const offset = parseInt(btn.dataset.offset, 10);
+      const d = new Date();
+      d.setDate(d.getDate() + offset);
+      dateInput.value = toISODate(d);
+    });
+  });
+
+  function setStatus(msg, isError = false) {
+    statusEl.innerHTML = msg;
+    statusEl.style.color = isError ? '#d9534f' : '#333';
+  }
+
+  function formatLocalTime(utcISOString, timeZone) {
+    const date = new Date(utcISOString);
+    return date.toLocaleTimeString('en-US', {
+      timeZone,
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: true
+    });
+  }
+
+  async function fetchAndRender(lat, lon) {
+    setStatus('<span class="spinner"></span>Fetching அமுத காற்று data... | தரவு பெறப்படுகிறது...');
+    resultEl.style.display = 'none';
+
+    try {
+      const selectedDate = new Date(dateInput.value + 'T00:00:00');
+      const apiDate = toISODate(selectedDate);
+      const displayDate = toDisplayDate(selectedDate);
+
+      const url = `${API_URL}?lat=${lat}&lng=${lon}&date=${apiDate}&formatted=0`;
+      const response = await fetch(url);
+      const json = await response.json();
+
+      if (json.status !== "OK") {
+        throw new Error("API returned error status");
+      }
+
+      const data = json.results;
+      const timezoneStr = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+      const twilightUTC = data.astronomical_twilight_begin;
+      const sunriseUTC = data.sunrise;
+
+      const twilightLocal = formatLocalTime(twilightUTC, timezoneStr);
+      const sunriseLocal = formatLocalTime(sunriseUTC, timezoneStr);
+
+      const durationMinutes = Math.round(
+        (new Date(sunriseUTC) - new Date(twilightUTC)) / 60000
+      );
+
+      resultEl.innerHTML = `
+        <div class="row"><span>🗓 தேதி</span><span class="code">${displayDate}</span></div>
+        <div class="row"><span>🌐 நேர மண்டலம்</span><span class="code">${timezoneStr}</span></div>
+        <div class="row"><span>📍 இடம்</span><span class="code">${parseFloat(lat).toFixed(4)}, ${parseFloat(lon).toFixed(4)}</span></div>
+        <div class="row"><span>🌅 அமுத காற்று தொடக்கம்</span><span class="code">${twilightLocal}</span></div>
+        <div class="row"><span>☀️ அமுத காற்று முடிவு</span><span class="code">${sunriseLocal}</span></div>
+        <div class="row"><span>⏱️ அமுத காற்று கால அளவு</span><span class="code">${durationMinutes} நிமிடங்கள் (mins)</span></div>
+      `;
+      resultEl.style.display = 'block';
+      setStatus("✅ Report generated successfully!");
+      resetBtn.style.display = 'block';
+      locationBtn.style.display = 'none';
+      manualBtn.style.display = 'none';
+    } catch (err) {
+      console.error(err);
+      setStatus("⚠️ API Error. Please try again. | பிழை ஏற்பட்டது.", true);
+      locationBtn.disabled = false;
+      manualBtn.disabled = false;
+    }
+  }
+
+  // --- Auto location button ---
+  locationBtn.addEventListener('click', () => {
+    if (!dateInput.value) {
+      setStatus("❌ Please select a date first. | முதலில் தேதியைத் தேர்ந்தெடுக்கவும்.", true);
+      return;
+    }
+    if (!navigator.geolocation) {
+      setStatus("⚠️ Geolocation is not supported by your browser.", true);
+      return;
+    }
+
+    locationBtn.disabled = true;
+    setStatus('<span class="spinner"></span>Fetching your location... | இருப்பிடம் பெறப்படுகிறது...');
+
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        fetchAndRender(position.coords.latitude, position.coords.longitude);
+      },
+      (error) => {
+        let msg = "⚠️ Could not get location.";
+        if (error.code === error.PERMISSION_DENIED) {
+          msg = "⚠️ Location permission denied. Try Manual Entry tab instead.";
+        }
+        setStatus(msg, true);
+        locationBtn.disabled = false;
+      },
+      { enableHighAccuracy: true, timeout: 10000 }
+    );
+  });
+
+  // --- Manual entry button ---
+  manualBtn.addEventListener('click', () => {
+    if (!dateInput.value) {
+      setStatus("❌ Please select a date first. | முதலில் தேதியைத் தேர்ந்தெடுக்கவும்.", true);
+      return;
+    }
+
+    const lat = parseFloat(latInput.value);
+    const lon = parseFloat(lonInput.value);
+
+    if (isNaN(lat) || isNaN(lon)) {
+      setStatus("❌ Please enter valid numeric latitude and longitude.", true);
+      return;
+    }
+    if (lat < -90 || lat > 90) {
+      setStatus("❌ Latitude must be between -90 and 90.", true);
+      return;
+    }
+    if (lon < -180 || lon > 180) {
+      setStatus("❌ Longitude must be between -180 and 180.", true);
+      return;
+    }
+
+    manualBtn.disabled = true;
+    fetchAndRender(lat, lon);
+  });
+
+
+
+  // --- Reset ---
+  resetBtn.addEventListener('click', () => {
+    resultEl.style.display = 'none';
+    resultEl.innerHTML = '';
+    setStatus('');
+    dateInput.value = toISODate(new Date());
+    latInput.value = '';
+    lonInput.value = '';
+    locationBtn.disabled = false;
+    manualBtn.disabled = false;
+    locationBtn.style.display = 'block';
+    manualBtn.style.display = 'block';
+    resetBtn.style.display = 'none';
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>சமரச சுத்த சன்மார்க்கம் - Vallalar | வள்ளலார் | அருட்பெருஞ்சோதி</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Added: needed for animate__animated / animate__fadeIn classes used below -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;700&family=Tiro+Tamil:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-saffron: #ffea00; /* True Ochre/Saffron - காவி (fixed: was bright yellow #ffea00) */
+            --color-gold: #FFD700;    /* True Royal Gold */
+            --color-dark: #333333;
+            --color-light-bg: #f3f3f3;
+            --font-heading: 'Tiro Tamil', serif;
+            --font-body: 'Noto Sans Tamil', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-dark);
+            background-color: var(--color-light-bg);
+            margin: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            color: var(--color-saffron);
+            text-align: center;
+            margin-top: 0;
+        }
+
+        a { color: var(--color-saffron); text-decoration: none; }
+        a:hover { text-decoration: underline; color: var(--color-gold); }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 700;
+            font-size: 1.1em;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover {
+            border-bottom: 2px solid var(--color-gold);
+            color: var(--color-gold) !important;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(252, 248, 243, 0.8), rgba(252, 248, 243, 0.8)), url('placeholder-image.jpg') center/cover no-repeat;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-attachment: fixed;
+        }
+        .hero h1 { color: var(--color-saffron); font-size: 3.5em; margin-bottom: 10px; }
+        .hero p { font-size: 1.5em; color: var(--color-dark); font-style: italic; }
+
+        .section { padding: 60px 0; border-bottom: 1px dashed #DDD; }
+
+        .content-card {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .song-list { list-style: none; padding: 0; }
+        .song-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border-left: 5px solid var(--color-saffron);
+            background-color: #FFF;
+        }
+        .song-item h3 { text-align: left; margin-bottom: 10px; }
+        .song-text { white-space: pre-wrap; font-size: 0.7em; }
+
+        .footer {
+            background-color: var(--color-saffron);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+        .footer a { color: var(--color-gold); }
+
+        /* --- Previously missing/undefined classes used in the page --- */
+        .glow-text {
+            color: var(--color-saffron);
+            text-shadow: 0 0 8px rgba(255, 153, 51, 0.8), 0 0 16px rgba(255, 153, 51, 0.5);
+        }
+        .neon-text-red {
+            color: #ff073a;
+            text-shadow: 0 0 5px #ff073a, 0 0 10px #ff073a, 0 0 20px #ff073a;
+        }
+        .glow-border {
+            border: 1px solid var(--color-saffron);
+            box-shadow: 0 0 10px rgba(255, 153, 51, 0.6);
+        }
+        .screen-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .screen-box {
+            padding: 25px 10px;
+            text-align: center;
+            font-weight: 700;
+            border-radius: 6px;
+        }
+        .heat-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .heat-fill {
+            width: 75%;
+            height: 100%;
+            background: linear-gradient(90deg, #ffea00, #f00);
+            animation: heatPulse 2s infinite alternate;
+        }
+        @keyframes heatPulse {
+            from { opacity: 0.6; }
+            to   { opacity: 1; }
+        }
+
+        /* --- Article styles (removed the duplicate/conflicting body rule) --- */
+        .article-container {
+            max-width:800px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            padding: 40px;
+            margin: 60px auto;
+        }
+        .article-title { font-size: 1.2rem; font-weight: bold; }
+        .article-meta { color: #6c757d; font-size: 0.9rem; margin-bottom: 20px; }
+        .article-content p { text-align: justify; line-height: 1.8; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top" style="background-color: var(--color-saffron); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+            <div class="container-fluid container">
+                <a class="navbar-brand text-white" href="index.html" style="font-family: var(--font-heading); font-size: 1.5em;"> அருட்பெருஞ்சோதி</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color: white;">
+                    <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=%270 0 30 30%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath stroke=%27white%27 stroke-width=%272%27 linecap=%27round%27 linejoin=%27round%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="info.html">Info About this website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <header class="py-5 text-center border-bottom border-info animate__animated animate__fadeIn">
+            <div class="container">
+                <h1 class="display-4 ">19 States of Soul Transformation</h1>
+                <p class="lead">Suddha Sanmargam - From Mortal Being to Eternal</p>
+            </div>
+        </header>
+
+        <div class="container my-5" id="history">
+            <div class="alert alert-success bg-transparent text-success border-success">
+                While humanity is generally confined to the states of waking, dreaming, and deep sleep, there exist sixteen transcendental states beyond them.
+                Even the cosmic entities Brahma, Vishnu, and Mahadev operate within this expanded spectrum. If we surpass the initial three states,
+                it is possible for us to ascend to the level of these deities and even beyond. Vallalar says our soul is a tiny atom and it has 19 states of consciousness.
+            </div>
+
+            <section class="mb-5">
+                <h2 class="neon-text-red mb-4">The 19 States of Consciousness</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card p-3 h-100 glow-border">
+                            <h5 class="text-warning">LOWER BAND (Jeeva)</h5>
+                            <p class="small">Humans (Measurable via Smartwatch)</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">1. Jeeva Waking</li>
+                                <li class="list-group-item">2. Jeeva Dream</li>
+                                <li class="list-group-item">3. Jeeva Deep Sleep</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-3 h-100 border-info">
+                            <h5 class="text-info">MID BAND (Nirmala / Para / Guru)</h5>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item">4-6. Nirmala (W/D/S)</li>
+                                <li class="list-group-item">7-9. Para (W/D/S)</li>
+                                <li class="list-group-item">10-12. Guru (W/D/S)</li>
+                                <li class="list-group-item">13. Guru Thuriyam (Mahan Thathuvarayar)</li>
+                                <li class="list-group-item">14. Guru Thuriyathitham</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card p-3 h-100 border-danger">
+                            <h5 class="neon-text-red">HIGH BAND (Suddha Shivam)</h5>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item">15. Suddha Shiva Waking</li>
+                                <li class="list-group-item">16. Suddha Shiva Dream</li>
+                                <li class="list-group-item">17. Suddha Shiva Deep Sleep</li>
+                                <li class="list-group-item">18. Suddha Shiva Thuriyam</li>
+                                <li class="list-group-item text-white bg-danger">19. Suddha Shiva Thuriyathitham (Vallalar)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="text-info mb-4 text-center">The Three Divine Body</h2>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="card h-100 glow-border">
+                            <div class="card-body">
+                                <h4 class="text-warning">Suddha Degam</h4>
+                                <p class="small text-secondary">The Golden Body / Levels 4-8</p>
+                                <p class="small"><strong>Entities:</strong> Brahma, Vishnu, Rudra, Ishwara, Sadashiva</p>
+                                <hr>
+                                <ul class="small list-unstyled">
+                                    <li><strong>Form:</strong> Kariya Rupam</li>
+                                    <li><strong>Body Type:</strong> Para Degam / Kalpa Dehi</li>
+                                    <li><strong>Consciousness:</strong> Para Unarchchi</li>
+                                    <li><strong>Knowledge:</strong> Para Arivu</li>
+                                    <li><strong>Principle:</strong> Para Thathuvam</li>
+                                    <li><strong>Transformation level:</strong> 10</li>
+                                    <li><strong>Appearance:</strong> 12 Year Old Appearance</li>
+                                    <li><strong>Biological:</strong> Touchable. No aging, No gray hair, No sweat, No sleep, No shadows, No growth or falling of hair</li>
+                                    <li><strong>Mystical Power:</strong> Karma Siddhi</li>
+                                    <li><strong>Path:</strong> Apara Maarkkam (Lower Path)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card h-100 glow-border">
+                            <div class="card-body">
+                                <h4 class="text-info">Pranava Degam</h4>
+                                <p class="small text-secondary">The Ethereal Form / Levels 9-13</p>
+                                <p class="small"><strong>Entities:</strong> Mahan Thathuvarayar</p>
+                                <hr>
+                                <ul class="small list-unstyled">
+                                    <li><strong>Form:</strong> Kariya Karana Rupam</li>
+                                    <li><strong>Body Type:</strong> Parampara Degam / Pranava Kalpa Dehi</li>
+                                    <li><strong>Consciousness:</strong> Parampara Unarchchi</li>
+                                    <li><strong>Knowledge:</strong> Parampara Arivu</li>
+                                    <li><strong>Principle:</strong> Parampara Thathuvam</li>
+                                    <li><strong>Transformation level:</strong> 16 to 108</li>
+                                    <li><strong>Appearance:</strong> 5-8 Year Old Appearance</li>
+                                    <li><strong>Biological:</strong> Visible but untouchable / Non-capturable.</li>
+                                    <li><strong>Mystical Power:</strong> Sarva Siddhi</li>
+                                    <li><strong>Path:</strong> Para Apara Maarkkam (Mid Path)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card h-100 border-danger shadow-lg">
+                            <div class="card-body">
+                                <h4 class="text-danger">Gana Degam</h4>
+                                <p class="small text-secondary">The Omnipresent Essence / Levels 14-19</p>
+                                <p class="small"><strong>Entities:</strong> Vallalar</p>
+                                <hr>
+                                <ul class="small list-unstyled">
+                                    <li><strong>Form:</strong> Karana Rupam</li>
+                                    <li><strong>Body Type:</strong> Engum Poorana Viyapakam (Omnipresent) / Kalatheethan (Beyond time and eternal)</li>
+                                    <li><strong>Consciousness:</strong> Parapara Unarchchi</li>
+                                    <li><strong>Knowledge:</strong> Parapara Arivu</li>
+                                    <li><strong>Principle:</strong> Parapara Thathuvam</li>
+                                    <li><strong>Transformation level:</strong> Infinite</li>
+                                    <li><strong>Appearance:</strong> 7 Appearance Types</li>
+                                    <li><strong>Biological:</strong> Visible but also invisible at the same time</li>
+                                    <li><strong>Mystical Power:</strong> Sarva Maha Siddhi & Absolute Freedom</li>
+                                    <li><strong>Path:</strong> Suddha Sanmargam (Highest Path)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5 p-4 bg-dark rounded border border-secondary">
+                <h2 class="text-center mb-4">The 7 Illusion Screens</h2>
+                <div class="screen-grid">
+                    <div class="screen-box" style="background: #000; color: #fff;">Black</div>
+                    <div class="screen-box" style="background: #00f; color: #fff;">Blue</div>
+                    <div class="screen-box" style="background: #080; color: #fff;">Green (Breakout Point)</div>
+                    <div class="screen-box" style="background: #f00; color: #fff;">Red</div>
+                    <div class="screen-box" style="background: #ffd700; color: #000;">Golden</div>
+                    <div class="screen-box" style="background: #fff; color: #000;">White</div>
+                    <div class="screen-box" style="background: linear-gradient(45deg, red, blue, green); color: #fff;">Mixed</div>
+                </div>
+                <p class="mt-4 text-center text-light">Destroy the <strong>Green Screen</strong> to unlock the 5 Divine Occupations (Creation, Preservation, Destruction, Hiding, Blessing) with a 4.32 Million Year Lifespan.</p>
+            </section>
+
+            <div class="alert alert-success bg-transparent text-success border-success">
+                Human beings who have abandoned caste and religious dogmas, ceased killing and eating animals,
+                and strive to show compassion toward all living beings are typically situated at the Green Screen level.
+                To remove the Green Screen, the soul atom requires an immense amount of pure heat.
+                Just as physical atoms transform from one state to another when heated, our soul atom undergoes a similar alchemy.
+                Through this process, our mortal physical body is transformed into the Suddha, Pranava, and Gnana Degams, allowing us to become immortal and eternal.
+            </div>
+
+            <section class="mb-5">
+                <h2 class="neon-text-red">3 Hours: Soul Atom Core Heating (100 Million Deg)</h2>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="heat-bar mt-2 mb-4"><div class="heat-fill"></div></div>
+                        <div class="card p-3 mb-3">
+                            <h5 class="text-info">Authorized Methods by Vallalar:</h5>
+                            <ul class="small">
+                                <li>Praying to Almighty Arutperunjothi to remove the green screen and other screens.</li>
+                                <li>Thinking of Almighty Arutperunjothi.</li>
+                                <li>Praising the Marvelous God Arutperunjothi.</li>
+                                <li>Asking Almighty Arutperunjothi to reveal the truth.</li>
+
+                                <li class="mt-3">
+                                    <b>Doing satvicharam (Inquiry) about the True nature of god. For Example,</b>
+                                    <ol type="1" class="mt-2">
+                                        <li>If god is full of grace then why scriptures mentioned he asked for child meat?</li>
+                                        <li>If god is full of mercy then why spiritual books mentioned he allowed eating animals for food?</li>
+                                        <li>If god is pure light then why do the scriptures mention Almighty having hands and legs?</li>
+                                        <li>Who are the gods mentioned in scriptures with hands and legs?</li>
+                                        <li>If god is pure light, why do scriptures show Almighty having weapons?</li>
+                                        <li>Why did Vallalar say the god he is talking about is not mentioned in any religious system before?</li>
+                                        <li>Why did Almighty Arutperunjothi tell Vallalar that all religious systems, Vedas, Agamas, Puranas, Ithigasas are false?</li>
+                                        <li>Suddha, Pranava and Gana Degam gods are made of atoms, but Almighty Arutperunjothi is Pure Light — how?</li>
+                                    </ol>
+                                </li>
+
+                                <li class="mt-3">
+                                    <b>Doing self-inquiry about the nature of our soul. For Example,</b>
+                                    <ol type="1" class="mt-2">
+                                        <li>Where do the seven types of illusion screens come from, that hide our soul's true power, which has the brightness of a thousand crore suns?</li>
+                                        <li>Our soul's true nature is Compassion, but why don't I have Compassion?</li>
+                                    </ol>
+                                </li>
+
+                                <li class="mt-3">
+                                    <b>Expressing our limitation to Almighty Arutperunjothi. For example,</b>
+                                    <p class="mt-2 mb-0">"You are my father, mother, guru, my friend, my relative, my god and everything to me. Look at me, my body is getting aged, my hair is turning grey, I will die. I'm your beloved son, <b>forgive my mistake and grant me Suddha, Pranava & Gana Degam.</b>"</p>
+                                </li>
+
+                                <li class="mt-3">By practicing the above methods daily for 3 hours, our soul atom temperature starts to increase day by day.
+                                    When the required temperature is reached by the grace of our Almighty Arutperunjothi, our body gets transformed into Suddha,
+                                    Pranava and Gana Degam.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="alert alert-danger bg-transparent text-danger border-danger">
+                            <strong>WARNING:</strong> Meditation, all forms of Yoga (such as Vasi and Kriya), Tapas, and Samadhi are all illusions.
+                            Do not engage with them. These systems are traps created by lower-level entities to prevent us from transcending beyond their influence.
+                            Humanity has been fooled by them for thousands of years. <b>Don't be a fool anymore.</b>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-5 border-top border-secondary pt-4">
+                <h3 class="text-warning">The Hierarchy of the Immortals</h3>
+                <p>Sanskrit scriptures and Tamil scriptures speak of deities such as Brahma, Vishnu, Rudra, Maheshwara, and Sadashiva.</p>
+                <p>The Ultimate God mentioned in Sanskrit and Tamil scriptures is Sadha Shiva.</p>
+                <p>The stages beyond Sadha Shiva are described below.</p>
+                <div class="d-flex flex-wrap gap-2 text-uppercase small">
+                    <span class="badge border text-primary">Sakthi (Vindhu)</span>
+                    <span class="badge border text-primary">Shivam (Nadham)</span>
+                    <span class="badge border text-primary">Para Sakthi (Para Vindhu)</span>
+                    <span class="badge border text-secondary">Para Shivam (Para Nadham)</span>
+                    <span class="badge border text-secondary">Param Param</span>
+                    <span class="badge border text-secondary">Parai Param</span>
+                    <span class="badge border text-warning">Sathar</span>
+                    <span class="badge border text-warning">Thikrantham</span>
+                    <span class="badge border text-warning">Athikrantham</span>
+                    <span class="badge border text-info">Sammovnam</span>
+                    <span class="badge border text-info">Suddham</span>
+                    <span class="badge border text-danger">Additham</span>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="mb-1">&copy; 2026 சமரச சுத்த சன்மார்க்கம் | வள்ளலார் | அருட்பெருஞ்சோதி</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55N

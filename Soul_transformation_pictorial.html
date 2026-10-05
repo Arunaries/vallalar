@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>சமரச சுத்த சன்மார்க்கம் - Vallalar |  வள்ளலார் | அருட்பெருஞ்சோதி </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;700&family=Tiro+Tamil:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-saffron: #ffea00; /* Deep Ochre/Saffron - காவி (fixed: was bright yellow #ffea00) */
+            --color-gold: #FFD700;    /* Royal Gold (fixed: was near-white #fafafa) */
+            --color-dark: #333333;     /* Dark Text */
+            --color-light-bg: #f3f3f3; /* Off-White/Parchment */
+            --font-heading: 'Tiro Tamil', serif;
+            --font-body: 'Noto Sans Tamil', sans-serif;
+        }
+
+        /* 1. Global & Typography */
+        body {
+            font-family: var(--font-body);
+            color: var(--color-dark);
+            background-color: var(--color-light-bg);
+            margin: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            color: var(--color-saffron);
+            text-align: center;
+            margin-top: 0;
+        }
+
+        a {
+            color: var(--color-saffron);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: var(--color-gold);
+        }
+
+        /* Override Bootstrap Nav Link Color for Saffron/White Theme */
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 700;
+            font-size: 1.1em;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            border-bottom: 2px solid var(--color-gold);
+            color: var(--color-gold) !important;
+        }
+        
+        /* 2. Hero Section (Home) */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(252, 248, 243, 0.8), rgba(252, 248, 243, 0.8)), url('placeholder-image.jpg') center/cover no-repeat;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-attachment: fixed;
+        }
+
+        .hero h1 {
+            color: var(--color-saffron);
+            font-size: 3.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            color: var(--color-dark);
+            font-style: italic;
+        }
+
+        /* 3. Main Content Area */
+        .section {
+            padding: 60px 0;
+            border-bottom: 1px dashed #DDD;
+        }
+
+        .content-card {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        /* 4. Song/Poem Layout (தத்துவப் பாடல்கள்) */
+        .song-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .song-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border-left: 5px solid var(--color-saffron);
+            background-color: #FFF;
+        }
+
+        .song-item h3 {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .song-text {
+            white-space: pre-wrap;
+            font-size: 0.7em;
+        }
+        
+        /* 5. Footer */
+        .footer {
+            background-color: var(--color-saffron);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+        
+        .footer a {
+            color: var(--color-gold);
+        }
+
+        /* ===================================================== */
+        /* 6. Terminal / Slide-Viewer UI (NEW — was totally       */
+        /*    undefined; all these classes had zero CSS)         */
+        /* ===================================================== */
+
+        .header {
+            display: flex;
+            align-items: baseline;
+            gap: 14px;
+            justify-content: center;
+            padding: 30px 20px 10px;
+            flex-wrap: wrap;
+        }
+        .logo {
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 1.8em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--color-saffron);
+            text-shadow: 0 0 6px rgba(255, 153, 51, 0.4);
+        }
+
+        .topic-nav {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .topic-btn {
+            font-family: 'Share Tech Mono', monospace;
+            background: #222;
+            color: #ddd;
+            border: 1px solid var(--color-saffron);
+            padding: 10px 18px;
+            border-radius: 4px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: all 0.2s ease;
+        }
+        .topic-btn:hover {
+            background: var(--color-saffron);
+            color: #111;
+        }
+        .topic-btn.active {
+            background: var(--color-saffron);
+            color: #111;
+            font-weight: 700;
+            box-shadow: 0 0 10px rgba(255, 153, 51, 0.7);
+        }
+
+        .terminal-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto 60px;
+            padding: 0 20px;
+        }
+
+        .directory {
+            flex: 1 1 280px;
+            max-height: 70vh;
+            overflow-y: auto;
+            background: #1a1a1a;
+            border: 1px solid var(--color-saffron);
+            border-radius: 6px;
+            padding: 10px;
+            font-family: 'Share Tech Mono', monospace;
+        }
+        .dir-item {
+            color: #bbb;
+            padding: 10px 12px;
+            border-bottom: 1px dashed #333;
+            cursor: pointer;
+            font-size: 0.9em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: background 0.15s ease, color 0.15s ease;
+        }
+        .dir-item:hover {
+            background: #2a2a2a;
+            color: var(--color-gold);
+        }
+        .dir-item.active {
+            background: var(--color-saffron);
+            color: #111;
+            font-weight: 700;
+        }
+
+        .viewer {
+            flex: 2 1 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #111;
+            border-radius: 6px;
+            padding: 20px;
+            min-height: 400px;
+        }
+
+        .img-frame {
+            position: relative;
+            display: inline-block;
+            max-width: 100%;
+            padding: 10px;
+        }
+        .img-frame img {
+            max-width: 100%;
+            max-height: 65vh;
+            display: block;
+            border-radius: 2px;
+        }
+
+        /* Sci-fi corner brackets */
+        .c {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            border: 2px solid var(--color-gold);
+        }
+        .c.tl { top: 0; left: 0; border-right: none; border-bottom: none; }
+        .c.tr { top: 0; right: 0; border-left: none; border-bottom: none; }
+        .c.bl { bottom: 0; left: 0; border-right: none; border-top: none; }
+        .c.br { bottom: 0; right: 0; border-left: none; border-top: none; }
+
+        @media (max-width: 768px) {
+            .terminal-wrapper { flex-direction: column; }
+            .directory { max-height: 240px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top" style="background-color: var(--color-saffron); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+            <div class="container-fluid container">
+                <a class="navbar-brand text-white" href="index.html" style="font-family: var(--font-heading); font-size: 1.5em;"> அருட்பெருஞ்சோதி</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color: white;">
+                    <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=%270 0 30 30%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath stroke=%27white%27 stroke-width=%272%27 linecap=%27round%27 linejoin=%27round%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="info.html">Info About this website</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+<div class="header">
+    <div class="logo">SUDDHA SANMARGAM</div>
+    <div class="small text-secondary d-none d-md-block">Marvelous God Arutperunjothi</div>
+</div>
+
+<div class="topic-nav">
+    <button class="topic-btn active" onclick="loadTopic(1, this)">SLIDE_01</button>
+    <button class="topic-btn" onclick="loadTopic(2, this)">SLIDE_02</button>
+    <button class="topic-btn" onclick="loadTopic(3, this)">SLIDE_03</button>
+</div>
+
+<div class="terminal-wrapper">
+    <div class="directory" id="dirContainer"></div>
+
+    <div class="viewer">
+        <div class="img-frame">
+            <div class="c tl"></div><div class="c tr"></div>
+            <div class="c bl"></div><div class="c br"></div>
+            <img id="display" src="" alt="System Ready">
+        </div>
+    </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script>
+    const topics = {
+        1: {
+            folder: "mysite/G_1",
+            prefix: "soulatom", // Files are soulatom_1.JPG, soulatom_2.JPG...
+            items: [
+                "01_Suddha_Sanmargam", "02_Limits", "03_19_States_of_Consciousness", "04_7_Illusions",
+                "05_Break_Point", "06_Alchemy", "07_Evolution", "08_3_Hour_Practice",
+                "09_Methods", "10_Satvicharam", "11_Surrender", "12_Warning",
+                "13_Hierarchy", "14_The_End"
+            ]
+        },
+        2: {
+            folder: "mysite/G_2",
+            prefix: "soul", // Files are soul_1.JPG, soul_2.JPG...
+            items: [
+                "01_19_States_of_Consciousness", "02_The_Limits", "03_Core_Catalyst", "04_Igniting_Soul_Atom", "05_Satvicharam", "06_Total_Surrender",
+                "07_The_Trap", "08_Threshold_of_Alchemy", "09_Suddha_Degam", "10_Pranava_Degam", "11_Gana_Degam", "12_Matrix_Of_Divine",
+                "13_Beyond_Scripture", "14_Radiant_Atom"
+            ]
+        },
+        3: {
+            folder: "mysite/G_3",
+            prefix: "soul", // Files are soul_1.JPG, soul_2.JPG...
+            items: [
+                "01_19_States_of_Consciousness", "02_The_Milestone", "03_Divine_Body", "04_Illusion_Screen", "05_Soul_Atom_Heating", "06_Catalyst_Protocol",
+                "07_Satvicharam", "08_The_Grand_Illusion", "09_The_Ultimate_Hierarchy",
+            ]
+        }
+    };
+
+    function loadTopic(topicNum, btnEl) {
+        document.querySelectorAll('.topic-btn').forEach(b => b.classList.remove('active'));
+        btnEl.classList.add('active');
+
+        const topic = topics[topicNum];
+        const dirContainer = document.getElementById('dirContainer');
+        dirContainer.innerHTML = '';
+
+        topic.items.forEach((name, index) => {
+            const itemDiv = document.createElement('div');
+            itemDiv.className = 'dir-item';
+
+            let fileNumber = index + 1;
+            let fullPath = `${topic.folder}/${topic.prefix}_${fileNumber}.JPG`;
+
+            itemDiv.onclick = function() { loadImg(fullPath, this); };
+            itemDiv.innerHTML = `${name}`;
+            dirContainer.appendChild(itemDiv);
+
+            if(index === 0) loadImg(fullPath, itemDiv);
+        });
+    }
+
+    function loadImg(path, el) {
+        const display = document.getElementById('display');
+        display.src = path;
+        document.querySelectorAll('.dir-item').forEach(i => i.classList.remove('active'));
+        el.classList.add('active');
+        el.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    }
+
+    window.onload = () => { loadTopic(1, document.querySelector('.topic-btn')); };
+</script>
+</main>
+
+    <footer class="footer">
+        <p class="mb-1">&copy; 2026 சமரச சுத்த சன்மார்க்கம் | வள்ளலார் | அருட்பெருஞ்சோதி</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>சமரச சுத்த சன்மார்க்கம் - Vallalar |  வள்ளலார் | அருட்பெருஞ்சோதி </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;700&family=Tiro+Tamil:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-saffron: #ffea00; /* Deep Ochre/Saffron - காவி (fixed: was bright yellow #ffea00) */
+            --color-gold: #FFD700;    /* Royal Gold (fixed: was near-white #fafafa) */
+            --color-dark: #333333;     /* Dark Text */
+            --color-light-bg: #f3f3f3; /* Off-White/Parchment */
+            --font-heading: 'Tiro Tamil', serif;
+            --font-body: 'Noto Sans Tamil', sans-serif;
+        }
+
+        /* 1. Global & Typography */
+        body {
+            font-family: var(--font-body);
+            color: var(--color-dark);
+            background-color: var(--color-light-bg);
+            margin: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            color: var(--color-saffron);
+            text-align: center;
+            margin-top: 0;
+        }
+
+        a {
+            color: var(--color-saffron);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: var(--color-gold);
+        }
+
+        /* Override Bootstrap Nav Link Color for Saffron/White Theme */
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 700;
+            font-size: 1.1em;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            border-bottom: 2px solid var(--color-gold);
+            color: var(--color-gold) !important;
+        }
+        
+        /* 2. Hero Section (Home) */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(252, 248, 243, 0.8), rgba(252, 248, 243, 0.8)), url('placeholder-image.jpg') center/cover no-repeat;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-attachment: fixed;
+        }
+
+        .hero h1 {
+            color: var(--color-saffron);
+            font-size: 3.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            color: var(--color-dark);
+            font-style: italic;
+        }
+
+        /* 3. Main Content Area */
+        .section {
+            padding: 60px 0;
+            border-bottom: 1px dashed #DDD;
+        }
+
+        .content-card {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        /* 4. Song/Poem Layout (தத்துவப் பாடல்கள்) */
+        .song-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .song-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border-left: 5px solid var(--color-saffron);
+            background-color: #FFF;
+        }
+
+        .song-item h3 {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .song-text {
+            white-space: pre-wrap;
+            font-size: 0.7em;
+        }
+        
+        /* 5. Footer */
+        .footer {
+            background-color: var(--color-saffron);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+        
+        .footer a {
+            color: var(--color-gold);
+        }
+
+        /* 6. Article styling (merged — removed the duplicate/conflicting body rule) */
+        .article-container {
+            max-width: 800px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            padding: 40px;
+            margin: 60px auto;
+        }
+        .article-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .article-meta {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        .article-content p {
+            text-align: justify;
+            line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top" style="background-color: var(--color-saffron); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+            <div class="container-fluid container">
+                <a class="navbar-brand text-white" href="index.html" style="font-family: var(--font-heading); font-size: 1.5em;"> அருட்பெருஞ்சோதி</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color: white;">
+                    <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=%270 0 30 30%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath stroke=%27white%27 stroke-width=%272%27 linecap=%27round%27 linejoin=%27round%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="info.html">Info About this website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container  bg-light"><br>
+
+<div class="article-container">
+      <h1 class="article-title">Gods Vs Chemist Arutperunjothi !</h1>
+    <div class="article-meta">Source:ThiruArutpa 6th Thirumurai</div>
+    <div class="article-content">
+
+      <p>Creation are of many types, in planet earth there are two category:</p>
+        <ul>
+          <li>Anupaksham</li>
+          <li>Sambupaksham</li>
+        </ul>  
+        <div class="alert alert-danger" role="alert">
+          <b>Anupaksham (Immature creation) </b> - Humans are born by eating herbs, through union of male and female bodies (sexual reproduction)
+        </div>
+        <div class="alert alert-success" role="alert">
+          <b>Sambupaksham (Mature creation)</b> - Humans are born merely by speaking (Through words), as soon as something is uttered, it becomes created.
+        </div>
+
+      <p>Human beings who are born in <b>Anupaksham</b> creation and attained the stages of Brahma,Vishnu,Rudhiran,Ishwaran,SadhaShivam,
+        Vindhu,Pranva Brahmam are Just the slipper 🩴dust of <b>Chemist Arutperunjothi </b> </p>
+
+     <p>Human beings who are born in <b>Sambupaksham</b> creation and attained the stages of Brahma,Vishnu,Rudhiran,Ishwaran,SadhaShivam,
+      Vindhu, Brahmam,Para Sakthi,Para Shivam are merely  the dust from the pinky toe nail 🦶🏼 of the left leg of <b>Chemist Arutperunjothi </b> </p>
+
+       <div class="alert alert-info" role="alert">
+       <p><i><b>Note:</b> Form of <b>Chemist Arutperunjothi</b> is pure light. Vallalar has used terminologies like "slipper","leg" and "toe" for comparison purposes and to help us to understand their position when compared to <b>Chemist Arutperunjothi</b>.</i></p>
+        </div>
+
+    </div>
+  </div>
+
+   <div class="article-container">
+      <h1 class="article-title">Who created religions in planet earth!</h1>
+    <div class="article-meta">Source:ThiruArutpa 6th Thirumurai</div>
+    <div class="article-content">
+
+        <div class="alert alert-danger" role="alert">
+          <b>"Vallalar says religions were created by Brahma, Vishnu, and Rudra (Shiva) in Planet earth"</b>
+        </div>
+
+      <p> A long time ago, human beings (atoms) performed penance towards Chemist Arutperunjothi and attained the power of creation,
+         protection, destruction, hiding, and blessing. They where called as:</p>
+         <ul>
+          <li>Brahma - The Creator</li>
+          <li>Vishnu - The Protector</li>
+          <li>Rudhiran (Shiva) - The Destroyer</li>
+          <li>Ishwaran - The hidder</li>
+          <li>SadhaShivam - The Blesser</li>
+        </ul>
+
+      <p>In the above five its Brahma,Vishnu and Rudhiran (Shiva) have created the religions system in planet earth and self claimed them self as
+        god by using Vedas,Agamas & Purunas, with the help of sage Veda Vayasar and hided the true God <b>Chemist Arutperunjothi.</b>.
+      </p>
+      <p>Followers of the religion system so far worshipped brahma,Vishnu and rudhiran (Shiva) as god and attained Few powers, But 
+        the dieties they worshipped are just a tiny dust when compared to Chemist Arutperunjothi, who is the real god. </p>
+
+        <p>These small gods like Brahma,Vishnu,Rudhiran (Shiva),etc.. have attained only limited powers,rejoice in them and become
+          prideful,thus remaining obstructed from ascending further to attain complete divine power.</p>
+
+        <p> So as a follower of suddha Sanmargam its unnecessary to worship these dieties as God.</p>
+
+        <p>Always show compassion towards all living beings and unconditional love towards the real god <b>Chemist Arutperunjothi</b> </p>
+
+    </div>
+  </div>
+
+  <div class="article-container">
+      <h1 class="article-title">Types of God stages </h1>
+    <div class="article-meta">Source:ThiruArutpa 6th Thirumurai & Preachings of Vallalar</div>
+    <div class="article-content">
+
+        <ul>
+          <li>Brahma </li>
+          <li>Vishnu </li>
+          <li>Rudhiran (Shivan)</li>
+          <li>Ishwaran </li>
+          <li>SadhaShivam </li>
+          <li>Sakthi(Vindhu)</li>
+          <li>Shivam(Nadham)</li>
+          <li>Para Sakthi(Para Vindhu)</li>
+          <li>Para Shivam(Para Nadham)</li>
+          <li>Param Param</li>
+          <li>Parai Param</li>
+          <li>Sathar</li>
+          <li>Thikrantham</li>
+          <li>Athikrantham</li>
+          <li>Sammovnam</li>
+          <li>Suddham</li>
+          <li>Additham</li>
+        </ul>
+<p>Finally comes <b>Chemist Arutperunjothi</b></p>
+    </div>
+  </div>
+
+    <div class="article-container">
+      <h1 class="article-title">Murugan and Vinayagar are not gods</h1>
+    <div class="article-meta">Source:Preachings of Vallalar</div>
+    <div class="article-content">
+
+<p>Murugan and Vinayagar are worshipped as God.Vallalar says murugan and vinyagar are not god. They are just pinda thathuvam.
+  Which means they indicate about certain nerve systen in human body and they are not god.
+</p>
+<p>Worship of pinda thathuvam as god came in to practice based on Sanskrit shiva maha Purunam,Skandha Purunam written by sage
+  Veda Vayasar. Vallalar clearly says all these Purunas are fake and full of lies.
+</p>
+    </div>
+  </div>
+
+    <div class="article-container">
+      <h1 class="article-title">Manikkavasagar and the 63 Nayanmars are not real</h1>
+    <div class="article-meta">Source:Preachings of Vallalar</div>
+    <div class="article-content">
+
+<p>Manikkavasagar and the 63 Nayanmars like Thirumoolar are not human beings; they are philosophies. The Devaram, Thiruvasagam,
+  Thirumandiram and similar works were not composed by these mentioned individuals. Some Siddhars, in reference to certain siddhis
+   (spiritual powers), created imaginary stories;in order to support those, a few songs were also composed, and names were assigned
+   in the Puranas as if they were sung by those people and made familiar as their work — but in reality, it is not true.
+</p>
+    </div>
+  </div>
+
+   <div class="article-container">
+      <h1 class="article-title">📚Vedam,Agamam,Idhigasam,Puranam are lies</h1>
+    <div class="article-meta">Source:ThiruArutpa 6th Thirumurai</div>
+    <div class="article-content">
+
+     <div class="alert alert-danger" role="alert">
+          <i>In india spirituality is formed based on Vedam,Agamam,Puranam and Idhigasam.Vallalar says all are lies and 
+            it will not take you to reach the real god <b>Arutperunjothi</b>
+          </i>
+        </div>
+
+<p>🔴Vedas like Rig,Sama,Yajur and Atharva are lies.</p>
+<p>🔴Agama's like Shaiva,Vaishnava,Shakta are lies.</p>
+<p>🔴All Puranams are Lies; Some of them are listed below</p>
+  <ul>
+  <li>Brahma Puranam</li>
+  <li>Padma Puranam</li>
+  <li> Vishnu Puranam</li>
+  <li>Shiva Puranam</li>
+  <li>Bhagavata Puranam</li>
+  <li>Narada Puranam</li>
+  <li>Markandeya Puranam</li>
+  <li>Agni Puranam</li>
+  <li>Bhavishya Puranam</li>
+  <li>Brahmavaivarta Puranam</li>
+  <li>Linga Puranam</li>
+  <li>Varaha Puranam</li>
+  <li>Skandha Puranam</li>
+  <li>Vamana Puranam</li>
+  <li>Kurma Puranam</li>
+  <li>Matsya Puranam</li>
+  <li>Garuda Puranam</li>
+  <li>Brahmanda Puranam</li>
+  <li>Thiruvilaiyadal Puranam</li>
+  <li>Periya Puranam</li>
+  </ul>
+<p>🔴Idhigasam's like Mahabharatham and Ramayanam are lies.</p>
+    </div>
+    <div class="alert alert-info" role="alert">
+          <i>Note: Vedas where given by Rudhiran(Shivan) at one period,Vishnu at one period,Brahma at one period and finally by
+            Sage Veda Vayasar.They are the foundation of all religion and belief system available in planet earth including buddhism,
+            jainism,christianity,Islam etc..
+          </i>
+        </div>
+  </div>
+
+   <div class="article-container">
+      <h1 class="article-title">📿Mantra's like OM, Sivayanama, Narayanayanama are useless</h1>
+    <div class="article-meta">Source:Preachings of Vallalar</div>
+    <div class="article-content">
+
+<p>Mantras such as Ang, Sing, Vang, Pang, Am, Vindu, Nadham, Siva, Vasi, Om, Ari, Ara, Sathu, Siththu, Anantham, Paripooranam, Jothi, 
+  Sivayavasi, Sivayanama, Namasivaya, Aa, Ee, Oo, Ai, Narayanayanama, Sivoham, Sogam,etc., are all considered Paribashai (technical or
+    mystical terminology).These mantras, tantras, secret utterances, symbolic phrases, seed syllables, principles, and physical 
+    or spiritual elements as used in various religious traditions.<br>Chanting (japa), meditating (dhyana), worshiping (archana), 
+    practicing devotion (upasana), entering into trance (samadhi), controlling breath (pranayama), observing vows (vratha), and 
+    engaging in similar forms of practice with these mantras — all such efforts are considered as useless.
+    <i><b>Suddha Sanmargam is the Supreme Path.</b></i></p>
+    </div> 
+
+  </div>
+
+  <div class="article-container">
+      <h1 class="article-title">Stages that soul (subtle atom) has to travel to attain complete bliss</h1>
+    <div class="article-meta">Source:Preachings of Vallalar</div>
+    <div class="article-content">
+
+ <p>Vallalar says that our soul (Ānma), which is a subtle atom (tiny particle), has three states:</p>
+ <ul>
+  <li>Wakefulness 😄</li>
+  <li>Dream 🙂‍↕️</li>
+  <li>Deep Sleep 😴</li>
+ </ul>
+ <p>Above three states are further classified as below;</p>
+
+ <div class="list-group">
+
+  <a class="list-group-item list-group-item-action list-group-item-danger">1.Jiva Wakefulness 😄 (Humans)</a>
+  <a class="list-group-item list-group-item-action list-group-item-danger">2.Jiva Dream 🙂‍↕️(Humans)</a>
+  <a class="list-group-item list-group-item-action list-group-item-danger">3.Jiva Deep Sleep 😴(Humans)</a><br>
+  <a class="list-group-item list-group-item-action list-group-item-primary">4.Nirmala Wakefulness 😄(Brahma)</a>
+  <a class="list-group-item list-group-item-action list-group-item-primary">5.Nirmala  Dream 🙂‍↕️(Vishnu)</a>
+  <a class="list-group-item list-group-item-action list-group-item-primary">6.Nirmala  Deep Sleep 😴(Rudhiran-Shivan)</a><br>
+  <a class="list-group-item list-group-item-action list-group-item-secondary">7.Para Wakefulness 😄(Ishwaran)</a>
+  <a class="list-group-item list-group-item-action list-group-item-secondary">8.Para Dream 🙂‍↕️(SadhaShivam)</a>
+  <a class="list-group-item list-group-item-action list-group-item-secondary">9.Para Deep Sleep 😴</a><br>
+   <a class="list-group-item list-group-item-action list-group-item-warning">10.Guru Wakefulness 😄</a>
+  <a class="list-group-item list-group-item-action list-group-item-warning">11.Guru Dream 🙂‍↕️</a>
+  <a class="list-group-item list-group-item-action list-group-item-warning">12.Guru Deep Sleep 🙂‍↕️</a>
+  <a class="list-group-item list-group-item-action list-group-item-warning">13.Guru Turiyam (Mahan Thathuvaraayar)</a>
+  <a class="list-group-item list-group-item-action list-group-item-warning">14.Guru Turiyatitam </a><br>
+  <a class="list-group-item list-group-item-action list-group-item-success">15.Suddha Siva Wakefulness 😄</a>
+  <a class="list-group-item list-group-item-action list-group-item-success">16.Suddha Siva Dream 🙂‍↕️</a>
+  <a class="list-group-item list-group-item-action list-group-item-success">17.Suddha Siva Deep Sleep 🙂‍↕️</a>
+  <a class="list-group-item list-group-item-action list-group-item-success">18.Suddha Siva Turiyam </a>
+  <a class="list-group-item list-group-item-action list-group-item-success">19.Suddha Siva Turiyatitam (Vallalar) </a><br>
+
+<p>Our soul atom need to reach the state of Guru Turiyam to attain Bliss and Suddha Shiva Turiyatitam to attain Complete Bliss</p>
+<p>So far in planet earth only Saint named <b><i>Mahan Thathuvaraayar</i></b> has attained the 13<sup>th</sup> state called <b>Guru Turiyam</b></p>
+<p>Vallalar has attained the 19<sup>th</sup> state called <b> Suddha Siva Turiyatitam</b></p>
+<p>By following <i><b>Suddha Sanmargam</b></i> one can attain the 19<sup>th</sup> state called <b>Suddha Siva Turiyatitam</b> directly</p>
+
+</div>
+    </div>
+  </div>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <p class="mb-1">&copy; 2026 சமரச சுத்த சன்மார்க்கம் | வள்ளலார் | அருட்பெருஞ்சோதி</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

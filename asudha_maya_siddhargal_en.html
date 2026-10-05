@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>சமரச சுத்த சன்மார்க்கம் - Vallalar |  வள்ளலார் | அருட்பெருஞ்சோதி </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;700&family=Tiro+Tamil:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-saffron: #ffea00; /* Deep Ochre/Saffron - காவி */
+            --color-gold: #fafafa;    /* Royal Gold */
+            --color-dark: #333333;     /* Dark Text */
+            --color-light-bg: #f3f3f3; /* Off-White/Parchment */
+            --font-heading: 'Tiro Tamil', serif;
+            --font-body: 'Noto Sans Tamil', sans-serif;
+        }
+
+        /* 1. Global & Typography */
+        body {
+            font-family: var(--font-body);
+            color: var(--color-dark);
+            background-color: var(--color-light-bg);
+            margin: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            color: var(--color-saffron);
+            text-align: center;
+            margin-top: 0;
+        }
+
+        a {
+            color: var(--color-saffron);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: var(--color-gold);
+        }
+
+        /* Override Bootstrap Nav Link Color for Saffron/White Theme */
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 700;
+            font-size: 1.1em;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            border-bottom: 2px solid var(--color-gold);
+            color: var(--color-gold) !important;
+        }
+        
+        /* 2. Hero Section (Home) */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(252, 248, 243, 0.8), rgba(252, 248, 243, 0.8)), url('placeholder-image.jpg') center/cover no-repeat;
+            /* **ACTION: Replace 'placeholder-image.jpg' with a serene image of the Saint/Temple** */
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-attachment: fixed; /* Optional: for a parallax effect */
+        }
+
+        .hero h1 {
+            color: var(--color-saffron);
+            font-size: 3.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            color: var(--color-dark);
+            font-style: italic;
+        }
+
+        /* 3. Main Content Area */
+        .section {
+            padding: 60px 0;
+            border-bottom: 1px dashed #DDD;
+        }
+
+        .content-card {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        /* 4. Song/Poem Layout (தத்துவப் பாடல்கள்) */
+        .song-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .song-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border-left: 5px solid var(--color-saffron);
+            background-color: #FFF;
+        }
+
+        .song-item h3 {
+            text-align: left;
+            margin-bottom: 10px;
+        }
+
+        .song-text {
+            white-space: pre-wrap;
+            font-size: 0.7em;
+        }
+        
+        /* 5. Footer */
+        .footer {
+            background-color: var(--color-saffron);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+        
+        .footer a {
+            color: var(--color-gold);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top" style="background-color: var(--color-saffron); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+            <div class="container-fluid container">
+                <a class="navbar-brand text-white" href="index.html" style="font-family: var(--font-heading); font-size: 1.5em;"> அருட்பெருஞ்சோதி</a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color: white;">
+                    <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=\'0 0 30 30\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath stroke=\'white\' stroke-width=\'2\' linecap=\'round\' linejoin=\'round\' d=\'M4 7h22M4 15h22M4 23h22\'/%3E%3C/svg%3E');"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="info.html">Info About this website</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+<br>
+<div class="jumbotron bg-white text-black jumbotron-fluid">
+  <div class="container"><br>
+    <h1 class="display-4">Varaverpu Malai</h1>
+    <br>
+    <h4>During 22-10-1873, Vallalar, also known as Chidambaram Ramalingam , said
+       that impure illusion Siddhas had hidden the secret about Lord Arutperumjothi (The supreme great gracious light) so far.
+        Furthermore, pure illusion elders were also not present to reveal the secret about Lord Arutperumjothi (The supreme great gracious light).
+      </h4><br>
+      <img class="card-img-top" src="images/vallalar_speech.png" alt="vallalar_speech"><br><br>
+      <a href="https://www.vallalar.org/English/VORG000000002B"> 👆 To read the last speech by Vallalar, also known as "The Great Sermon," --> Click here 👆</a><br><br>
+      <a href="https://www.vallalar.org/english">👆 To read about Vallalar also known as Ramalinga --> Click here 👆</a><br><br>
+
+      <h5 style="color:rgb(8, 223, 251);"><b>Who is Lord Arutperumjothi ? 😍 </b></h5>
+      <p><i><b> Lord Arutperumjothi ❤️ is the one who have created Billions of Shiva , Brahma, Vishnu , Rudhiran, SadhaSivam, Sakthi , Sakthargal,  small
+        dieties etc. Mantras "Shivaya Nama, OM Namashivaya ,OM Namo Narayana naya  etc... are obsolute" 😲.<br><br>
+        " 🔥 Arutperumjothi Arutperumjothi Thani Perum Karunai Arutperumjothi 🔥" is the new mantra releaved by Lord Arutperumjothi to access him"<br><br>
+        Even Vallalar told about the  life span of gods that we are worshiping currently in planet earth😎.<br><br>
+
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">S.no</th>
+              <th scope="col">Gods </th>
+              <th scope="col">Life Span in years</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Brahma</td>
+              <td>4,32,000</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Vishnu</td>
+              <td>8,64,000</td>
+            </tr>
+
+            <tr>
+              <th scope="row">3</th>
+              <td>Rudhiran</td>
+              <td>12,96,000</td>
+            </tr>
+
+            <tr>
+              <th scope="row">4</th>
+              <td>Ishwaran</td>
+              <td>17,28,000</td>
+            </tr>
+
+            <tr>
+              <th scope="row">5</th>
+              <td>Sadha Shivam</td>
+              <td>43,20,000</td>
+            </tr>
+
+          </tbody>
+        </table>
+
+
+        <p> The above gods after completing their life span, they need to born in planet earth with a human body and need to follow Suddha
+          Sanmargam Principle to attain true immortality (Stage of arutjothi). Unless they attain the stage of arutjothi , they also need to undergo
+          born & die process.
+        </p>
+      </b></i></p>
+
+      <h5 style="color:rgb(8, 223, 251);"><b>How to access Lord Arutperumjothi ? 😍 </b></h5>
+      <p><b> ✅ Its very simple, Become a vegetarian if possible became a vegan.<br> ✅ Come out of all spirtiual beliefs so far you have travelled.<br>
+        ✅ Don't follow any rituals available in Sanatana dharama, Hinduism ,Christianity, Islam, Siddhar worship etc... <br>
+        ✅ Don't do any Vasi yoga , Kriya Yoga , kundalini awakening , samadhi practices etc. <br>
+        ✅ Believe, we doesn't require any guru to access our father lord Arutperumjothi. <br>
+        ✅ If you see some living beings in hungry, offer them food and erdicate the hunger. <br>
+        ✅ Believe God is One, He is in the form Supreme great gracious light.  <br>
+        ✅ Yogis mediate for thousand of year to generate warmth (Shuddha Ushanam). Vallalar says, One can generate Billions times more warmth (Shuddha Ushanam)
+        just by thinking of Lord ArutPerumJothi instead of yogic practices. On generating the warmth (Shuddha Ushanam) one can remove the seven illusion screen which
+        keeps hiding the secret about Lord ArutPerumJothi.Believe in the words of Ramalinga Because he is the one who have attained real immortality (Stage of arutjothi) <br>
+        ✅ Keep diyas lamp infront of you 🪔 .<br>
+        ✅ Chant the mantra "Arutperumjothi Arutperumjothi Thani Perum Karunai Arutperumjothi " with a love to  see our father
+        Lord Arutperumjothi for 2 hours 24 minutes 🕑. <br>
+        ✅ Follow the principles of Suddha Sanmargan .
+
+        </b></p>
+        <img class="card-img-top" src="images/worship.png" alt="Worship"><br><br>
+        <a href="http://www.immortallife.org/Sanmargam.php" >👆 Click here --> to know about Suddha Sanmargam 👆</a><br><br>
+    <h5 style="color:rgb(223, 63, 9);"><b>Who are those Impure illusion Siddhas (Asudha maya siddargal) ? </b></h5><br>
+    <h5 style="color:rgb(10, 237, 18);"><b>Who are those Pure illusion elders (Sudha maya elders) ? </b></h5><br>
+    <h5>" We can see the answer to this from the book 📚 Bogar 7000 (Sabda Kandam) written by a Tamil Siddhar Named Bogar "</h5>
+    <a href="https://palani.org/bhogar-life.htm"> 👆 About Siddhar Bogar --> Click here 👆 </a><br><br>
+
+    <h5 style="color:rgb(10, 36, 237);"> First of all, let's explore who the Siddhas are ?</h5><br>
+
+    <img class="card-img-top" src="images/Slide1.PNG" alt="God's level"><br><br>
+
+    <h5>For those in the human state, when the Sathini Patham (Sathini state) occurs, they will attain the Ashtama Siddhis (eight supernatural powers).
+    The force that brings about the Sathini Patham is the Omkara Shakti (the primal sound energy). This is what the Siddhars have referred to in
+    their hymns as Manonmani Thaaye (Mother Manonmani) and Vaalai Penn (Divine Maiden)<br> Look at the examples below.</h5><br>
+
+
+
+      <h5 style="color:rgb(154, 71, 44);"><b>Agastya: </b></h5>
+      <a href="https://en.wikipedia.org/wiki/Agastya" > 👆 Click here --> to know about Agastya 👆</a>
+      <h6 style="color:rgb(20, 167, 207);"><b>சத்தியே (Sakthi)</b>   பராபரமே ஒன்றே தெய்வம்<br>சகலவுயிர் சீவனுக்கு மதுதா னாச்சு</h6><br>
+
+      <h5 style="color:rgb(154, 71, 44);"><b>Konganar: </b></h5>
+      <a href="https://www.anaadifoundation.org/blog/parnika/siddhar-charithiram-konganar/" > 👆 Click here --> to know about Konganar 👆 </a>
+      <h6 style="color:rgb(20, 167, 207);">சித்தர்கள் போற்றிய <b>வாலைப் பெண்  (Vaalai Pen) ணாமந்த</b> <br> <b>சத்தியின் </b>மேற்கும்மிப் பாட்டுரைக்க </h6><br>
+
+      <h5 style="color:rgb(154, 71, 44);"><b>Bogar: </b></h5>
+      <a href="https://palani.org/bhogar-life.htm" > 👆 Click here --> to know about Bogar 👆</a>
+      <h6 style="color:rgb(20, 167, 207);">தானான யின்னமொரு போக்குசொல்வேன் தகமையுள்ள நற்பாலா பண்புள்ளானே<br>
+        கோனான எனதையர் காலாஙிகிநாதர் கொற்றவனார் எந்தனுக்குச் சொன்னநீதி<br>
+        தேனான <b>மனோன்மணியாள் (Manonmani) </b>கடாட்சத்தாலே தெளிவுடனே எந்தனுக்கு உபதேசித்தார்
+        </h6><br>
+
+        <p> Even after attaining <b>Ashtama Siddhis (the mystical superpowers),</b> regardless of that, <b>if you are kind and compassionate</b>,
+          you can reach the <b>state of Shivam</b>. From there, you can <b>ascend to the level of Lord Arutperumjothi.</b></p>
+
+        <p>Vallalar, in his principle called "Suddha Sanmargam," stated that the practice of Saththini Paadam should be accompanied by three
+          key elements:<br> <b>1. ஜீவகாருண்யம் - Jeeva karunyam (compassion towards all souls) </b> <br> <b>2. சத்விசாரம் - Satvisaram (seeking the truth about Lord Arutperumjothi)</b> <br>
+          <b>3. பரபோகாரம் - Parapokaram (showing unconditional love towards Lord Arutperumjothi).</b></p>
+          <a href="http://www.immortallife.org/Sanmargam.php" >👆 Click here --> to know about Suddha Sanmargam 👆</a>
+           <hr>
+        <p>Oh! <b>Can Saththini Paadam be performed in another way?</b> Yes, it is possible. <b>It can also be practiced through Vasiyogam.</b>
+           This is the method that many Siddhas followed, and it is mentioned in their songs. Please see the examples below.</p>
+
+
+          <h5 style="color:rgb(154, 71, 44);"><b>Bogar: </b></h5>
+          <h6 style="color:rgb(20, 167, 207);">நாட்டமாய் லகுவாக மூலம்பாரு நலமான<b>வாசி (Vasi yoga) கொண்டு</b> ஊதியூதி<br>
+            ஊட்டமாய் சாக்கிரத்தில் நின்றுநின்று உத்தமனே நந்திகண்டால் வாதங்காணும்<br>
+            தூட்டமாய் வெறும்பேச்சால் வார்த்தைசொன்னால் சுடுகாட்டுப்பிணமாக சொல்லுக்கொக்கும்<br>
+            பூட்டுவாய் மூலத்தின் ஒளிகாண்மட்டும் பொற்கொடிபோல் சுழிமுனையும் திறந்துபோகும்
+            </h6><br>
+           <h5 style="color:rgb(154, 71, 44);"><b>Konganar: </b></h5>
+          <h6 style="color:rgb(20, 167, 207);">ஏய்க்கு தேய்க்கு தஞ்செழுத் துவகை<br>
+            எட்டிப் பிடித்துக் கொளிரண்டெழுத்தை<br>
+            நோக்கிக்கொள் <b>வாசியை மேலாக வாசி (Vasi yoga)</b><br>
+            நிலையைப் பாரடி வாலைப் பெண்ணே  </h6> <hr>
+
+          <h5 style="color:rgb(10, 36, 237);"><b>Lets see about Bogar Siddhar ! </b></h5>
+
+          <p>Bogar's lifespan occurred after the period when Thirumoolar lived! Here is an example song from the book 'Bogar - 7000' as evidence."</p>
+
+          <div class="card-group">
+            <div class="card border-primary mb-3 ">
+              <div class="card-header text-center"><b> 🎵 Song Number -  97</b></div>
+              <div class="card-body">
+
+                <p class="card-text text-primary">அவுஷதமொடு வவுஷதவகை பதினேழும் அடங்களுஞ் சொல்லு ரெண்ணாயிரத்துள்ளே
+                  வவுஷதமொடு ஏழுலட்சகிரந்தப் போக்கை இடித்தும் <b>எண்ணாயிரமாம் என்பாட்டர்சொன்னார் </b> கவுஷதமெண்ணாயிரத்தைத்
+                  திரட்டித்தானும் கதித்த <b>ஐயாயிரமாய் பின்புசொன்னார்</b>
+                  மவயஷத<b> மூவாயிரமும் ஆயிரம்</b>பின்பு சொன்னார்முந்நூறு முப்பத்து மூன்றென்றாரே</p>
+                  <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters </small></p>
+
+              </div>
+            </div>
+            <div class="card border-primary mb-3">
+              <div class="card-header text-center"><b>💬 Explanation</b></div>
+              <div class="card-body">
+                <p class="card-text text-primary">Thirumoolar has mentioned about seventeen of the medicinal herbs in his book Ettayaram(Eight thousand).
+                  He has also given the comments of seven lakh songs in his book Ettayaram (Eight thousand). Then he summed it up and said it in a song of five thousand.
+                   Then he shortened that too and said it in three thousand songs. They say it as three thousand three hundred and thirty three</p>
+                   <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters  </small></p>
+              </div>
+            </div>
+          </div>
+         <p> From the above explanation its very clear that Bogar's life span & his guru kalangi nathar life span is after the period of Thirumoolar</p>
+          <h6 style="color:rgb(20, 167, 207);">“சாத்திரங்களிற் சிறந்தது திருமூலர் திருமந்திரம். இஃது மொத்தம் எண்ணாயிரம் (Thirumanthiram is the best among scriptures.
+             It consists of a total of ten thousand verses.) - Vallalar” </h6>
+          <p><b>Vallalar stated that these are the complete songs of Thirumanthiram, totaling eight thousand verses.</b>.</p>
+          <hr>
+
+          <h5 style="color:rgb(10, 36, 237);"><b>Vallalar formulated the principle called Suddha Sanmargam to guide the evolution of the human race towards attaining true immortality (Stage of arutjothi).
+            However, it is a misconception that Siddhas have achieved immortality  through Vasi Yoga and the use of herbs. Such claims are false
+          </b></h5>
+          <a href="http://www.immortallife.org/Sanmargam.php" > 👆 Click here --> to know about Suddha Sanmargam 👆 </a><br><br>
+          <p>Bogar stated that his guru, Kalanginathar, achieved samadhi through the practice of Vasi Yoga. After his physical death in samadhi form,
+            Kalanginathar transcended to Kailayapathi.
+          </p>
+
+            <p style="color:rgb(30, 156, 146);"><b> 1.In the below-mentioned song, Bogar emphasized that every human being is destined to face death.
+               No human can attain immortality.
+            </b></p>
+           <div class="card-group">
+            <div class="card border-primary mb-3 ">
+              <div class="card-header text-center"><b> 🎵 Song Number -  2980</b></div>
+              <div class="card-body">
+
+                <p class="card-text text-primary">பேரான தத்துவங்கள் அறிந்துமென்ன பேருலகில் ஞானிகளாய் இருந்துமென்ன
+                  நேரான நல்லவழி தெரிந்துமென்ன நேர்மையுடன் அறியாமல் இருந்துமென்ன கூரான சாத்திரத்தைக் கற்றுமென்ன
+                   குவலயத்தில் வெகுகாலம் இருந்துமென்ன தூரான கெட்டவழி சென்றுமென்ன <b>துறையோடு காலம்வரை ஒன்றுங்காணே</b>
+                  </p>
+                  <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters </small></p>
+
+              </div>
+            </div>
+            <div class="card border-primary mb-3">
+              <div class="card-header text-center"><b>💬 Explanation</b></div>
+              <div class="card-body">
+                <p class="card-text text-primary">
+                  Even if one understands all the great philosophies, what is the use? Even if one is knowledgeable, what is the use?
+                   Even if one knows the right path, what is the use if they do not follow it? What is the use of studying scriptures?
+                   What is the use even if one lives for a long time in this world? What is the use if they choose the wrong path?
+                   The truth is that no one can live forever, even for a single moment, until eternity</p>
+                   <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters  </small></p>
+              </div>
+            </div>
+          </div>
+          <p style="color:rgb(30, 156, 146);"><b> 2. In the song below bogar says, most of the Siddhas say that they can prolong this physical body for many ages. But my Guru, Kalanginathar, told me that it is all false</b></p>
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2981</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">காணவே பிரபஞ்ச வாழ்க்கையாவும் கருத்துடனே கொண்டவர்க்கு ஒன்றுமில்லை
+                    தோணவே நூலாதி நூல்கள்தோறும் துடர்ந்துமே சடலமது இருக்கவென்று மாணவே சித்தர்முனி ரிஷிகளெல்லாம்
+                    மாராட்ட மாகவல்லோ நூல்செய்தார்கள் வேணவே காலாங்கி நாதர்தம்மால் கண்டறிந்த உளவுதன்னை யான்சொல்வேனே
+                    </b>
+                    </p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">Those who have understood the truth of this worldly life know that there is nothing permanent.
+                     However, many Siddhas have falsely written in their books that one can live with this physical body for many ages.
+                      My Guru, Kalangi, who made me realize this truth, has revealed the secrets to me.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters </small></p>
+                </div>
+              </div>
+            </div>
+
+            <p style="color:rgb(30, 156, 146);"><b> 3. In the song mentioned below, it is stated that many Siddhas, including Kalanginathar,
+               practiced Vasi Yoga. After their death, they attained Vaikundam.
+               They affirm that no one remains in this world as they were before.</b></p>
+
+              <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2983</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">ஆச்சென்ற தேகமது நித்யாநித்தம் அப்பனே யாமறிந்த வரைக்குஞ்சொல்வோம் மூச்சடங்கி எனதையர்
+                    காலாங்கிநாதர் மூன்றுயுக கோடிவரை சீனந்தன்னில் பேச்சொன்றும் இல்லாமல் சாமாதிதன்னில் பிணம்போல இருந்தாரே சிலதுகாலம்
+                    வாச்சலுடன் வாசிதனை அடக்கிக்கொண்டு வையகத்தில் சிலதுநாளா இருந்திட்டாரே</p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters </small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">It is said that my Guru, Kalanginathar, remained in deep meditation for three Yugas (ages) in China.
+                     However, it is true that he practiced Vasi Yoga for some time and eventually passed away</b></p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2984</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">இருந்திட்ட காலாங்கி தம்மைப்போல எழிலான சித்தர்முனி ரிஷிகளெல்லாம் பொருந்தியே பூவுலகில்
+                    வாசிகொண்டு பொன்னுலக நாட்டுக்கு போனார்தாமும் திருந்தியே ஒருவருந்தான் இருந்ததில்லை சிறப்புடனே வைகுண்டம் சேர்ந்தாரங்கே
+                    வருந்தியே அழைத்தாலும் வருவதுண்டோ வருங்காலம் தானிருந்தால் வருகுந்தானே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">Siddhas, sages, and seers like Kalanginathar all practiced Vasi Yoga.
+                     Later, they attained Vaikundam  just like him. No one remained in this world as they were before.
+                     Regardless of how you address them, they can return if you wish. However, they will only return if you are still present during that time.
+                      This is the truth</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+            <h5 style="color:rgb(237, 10, 10);"><b>The songs written by Bogar state that it is not possible to attain the state of real immortality
+              as proclaimed by Vallalar in the principle of Suddha Sanmargam </b></h5>
+              <a href="http://www.immortallife.org/Sanmargam.php" > 👆 Click here --> to know about Suddha Sanmargam 👆</a>
+              <hr>
+
+
+            <p><i>
+              Vallalar proclaims that the three bodies, namely the<b> Pure body, Pranava body, and Wisdom Light body, are immortal</b>.
+               These three bodies are considered superior in the path of Suddha Sanmargam. It is important to note that so far,
+                only Vallalar has achieved and possesses these bodies, and no one else. On the other hand, impure Maya Siddhas
+                were able to attain longevity through the practice of Vasi Yoga, breath control, and the consumption of herbs.
+                 However, they were unable to attain true immortality. <b>Vallalar formulated the principle of Suddha Sanmargam to assist
+                  the human race in attaining the Pure body, Pranava body, and Wisdom Light body.</b></i> </p>
+                  <p> In the below poems, Bogar explains how the Siddhas used herbs and practiced Vasi Yoga to live long lives </p>
+           <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2855</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">பண்ணவே காயாதி கற்பவுண்டை பாருலகில் நாதாக்கள் ரிஷிகள்தாமும் வண்ணமுடன் மாணாக்கள் பிழைக்கவென்று
+                    வாகுடனே சீனபதி தேசத்தாற்குதிண்ணமுடன் இப்பாகம் செய்துவைத்தேன் திறமையுடன் காயாதி கற்பந்தன்னை நண்ணமுடன் உண்டுமல்லோ
+                    மாந்தர்தாமும் மானிலத்தில் சித்தரைப்போல் இருந்திட்டாரே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">I would say to people every day to consume this medicine like wearing a garment.
+                     I would teach this method to the Chinese people, and they also lived like the Siddhas with this medicine.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2855</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">இருந்திட்டார் வெகுகோடி காலமப்பா எழிலான சித்தர்முனி தம்மைப்போல குருந்திட்ட சமாதிதனில் ,
+                    இருந்துகொண்டு குருவான காளாங்கிநாதரை மனதிலெண்ணி திருந்திட்ட சிவயோகம் தன்னிற்சென்று தீரமுடன் காயத்தை நிருத்திக்கொண்டு
+                    பொருந்திட்ட மாகவல்லோ வாசிதன்னை பூட்டியே உள்ளடக்கி புரிந்திட்டாரே
+
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">
+                    They practiced Vasi Yoga by attaining the state of deep meditation for billions of years, similar to the Siddhas,
+                     and by focusing their thoughts on Kalanginathar</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <p><b> Vallalar emphasized that practicing Samadhi is just a illusion (maya) practice.
+               He told that true immortality can be achieved through being in touch with lord Arutperumjothi and practicing
+                "Jeeva Karunyam" (compassion towards all living beings). It is through these practices that one can attain spiritual enlightenment
+                 and liberation from the cycle of birth and death !</b>  </p>
+            <h6 style="color:rgb(20, 167, 207);">“ஆடாதீர் சற்றும் அசையாதீர் வேறொன்றை<br>
+              நாடாதீர் பொய்உலகை நம்பாதீர் - வாடாதீர்<br>
+              சன்மார்க்க சங்கத்தைச் சார்வீர் விரைந்தினிஇங்<br>
+              கென்மார்க்க மும்ஒன்றா மே.! “<br><br>
+              "Do not dance, do not move,<br>
+              Do not believe in another,
+              Do not wander in the false world, do not run after it,<br>
+              Join the sanmargam sangam to know the truth & attain immortality"
+              </h6><br>
+              <p><b><i>Instead of following the path of Suddha Sanmargam, if we engage in practices such as Vasi Yoga and worshiping idols of Shiva, Brahma, Vishnu, and other deities,
+                we cannot achieve true immortality, which is living without death. This is the truth!</i></b></p>
+
+          <p style="color:rgb(173, 29, 178);"><i>
+            Now, let us explore what Bogar has recorded in his book, Bogar 7000, where he describes his experiences of traveling to
+            seven  galaxies using குளிகை (Kuligai) . In
+             Some Siddhas over there encountered difficulties in Kailasa Padhi. It is because they had committed mistakes and had unresolved issues in the planet earth.</i> </p><hr>
+
+             <div class="alert alert-danger" role="alert">
+            <i>From the information below, we can understand that the Siddhas who are being worshipped on planet Earth have already passed away,
+              and they are currently undergoing punishment in the Kailasa Padhi  for the mistakes and sins they committed during their lifetime on Earth</i>
+            </div>
+
+            <div class="alert alert-info" role="alert">
+              Yes! The Siddhas who are being worshipped are dead! Read the following songs written by Bogar to understand the truth.
+            </div>
+
+        <span class="badge badge-danger"><h6>1. Konganar</h6> </span><br><br>
+
+       <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2887</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">தாமான இன்னமொரு கருமானங்கேள் தயவாகச் சொல்லுகிறேன் தன்மையாக
+                    சாமான மானதொரு <b>அகத்தியர்தாமும்</b> சாங்கமுடன் வைகுண்டம் தன்னிற்கண்டேன்
+                    கோமானாம் <b>கொங்கணவர்</b> செய்தபாவம் குவலயத்தில் முற்பிறப்பில் மெத்தவுண்டு
+                    பூமானாம் கொங்கணரைக் கேள்விகேட்டு புத்தியுடன் தண்டனைக்கு உள்ளாக்கினாரே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">Let me tell you once again, listen. I have seen Agathiyar in Vaikunta . Kungana, before his previous birth,
+                    had committed numerous sins. Due to those sins, he underwent punishments in the form of questioning and retribution..</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge badge-danger"><h6>2. Idaikkadar </h6> </span><br><br>
+
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2888</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">ஆக்கினார் <b>இடைக்காடார் </b>தன்னைக்கண்டேன் அப்பனே அவர்செய்த வினைதான்கேளு
+                    பாக்கியங்கள் அனேகமதாய்க் கொண்டுயென்ன பாருலகில் சிலதருமம் இல்லையப்பா
+                    நோக்கமுடன் அவர்செய்த பூர்வபுண்ணியம் நொடிக்குள்ளே ராஜனவன் கண்டாராய்ந்து
+                    தாக்கமுடன் அவர்மீதில் பட்சம்வைத்து கஷ்டமில்லா ஆக்கினைக்குள் சென்றிட்டாரே
+
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">I have seen the  Idaikkadar  siddhar.Listen to what happened to Idaikkadar.
+                    Even though some achievements in this world may seem virtuous, they are also tainted with sin. I observed his previous good
+                     deeds and found that he faced no hardships or punishments
+                  </p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge badge-success"><h6>3.  Siva Vakkiyar</h6> </span><br><br>
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2889</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">சென்றவுடன் <b>சிவவாக்கியர்</b> தன்னைக்கண்டேன் சிறப்புடனே அவர்தம்மை கேள்விகேட்டார்
+                    ஒன்றுமில்லை அவர்மீதில் குற்றமில்லை உத்தமனே வைகுண்டப் பதியில்தாமும்
+                    குன்றின்மேலிக் கொடுத்தார் தூதர்தாமும் கொப்பெனவே சாமிக்குத் தொண்டனாக்கி
+                    வென்றிடவே சதாகாலம் கைலாசத்தில் வேகமுடன் வீற்றிருக்க கெடுவுண்டாச்சே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">I have seen Siva Vakkiyar.
+                    Since there is no sin upon him, he resides in Vaikunta and enjoys eternal bliss in Kailasa.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+            <span class="badge badge-danger"><h6>4.Brahmamuni</h6> </span><br><br>
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2890</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">ஆச்சப்பா <b>பிரம்மமுனி</b> தன்னைக்கண்டேன் அப்பனே அவர்செய்த கொடுமைகேளும்
+                    மூச்சடங்கி பிணம்போல இருந்தசித்தன் முடிமீதில் ஜெபமாலை அணிந்துகொண்டு
+                    பாச்சலுடன் வெகுதேசம் ஓடிச்சென்று பாடுபட்டு திரவியங்கள் சேகரித்து
+                    பாச்சலுடன் சாத்திரங்கள் படித்துக்கொண்டு மாறாட்டம் ஆகவல்லோ மறைத்தார்தாமே
+
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">I saw Brahma Muni. Please listen to the bad things he has done. Despite being in samadhi,
+                    he traveled to many countries performing miraculous deeds and saved money. However, he concealed the truths despite studying numerous scriptures.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge badge-warning"><h6>5. Kamalamuni</h6> </span><br><br>
+
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2892</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">செய்யவே <b>கமலமுனி</b> தன்னைக்கண்டேன் சேர்வைமுகம் காணுகையில் அடியேன்பக்கம்
+                    பையவே தீர்ப்புமிகச் செய்யக்கண்டேன் பாழ்நரகில் சிலபேர்கள் இருக்கக்கண்டேன்
+                    தொய்யவே காலனவன் கிருபைவைத்து துப்புரவாய் எந்நாளும் தருமஞ்செய்ய
+                    மெய்யுடனே தீர்ப்புரைக் கண்டேன்யானும் மேதினியில் சொன்னாலும் பொய்யென்பாரே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">
+                    I have seen Kamalamuni. I observed that many people were in hell. I witnessed one person preaching about the importance of showing
+                     compassion to everyone and providing assistance. However, people on Earth regard all of this as falsehoods.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge badge-danger"><h6>6. Pulipani</h6> </span><br><br>
+
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2893</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">பொய்யென்பார் பூதலத்தார் சொல்லுவார்கள் பொங்கமுடன் யான்கண்ட வரையிற்சொன்னேன்
+                    மெய்யுடனே <b>புலிப்பாணி</b> தன்னைக்கண்டேன் மேதினியில் அனேகமதாய் பாவஞ்செய்தார்
+                    கைதவமாய் அவர்செய்த பாவந்தன்னை கண்டுமல்லோ எமதர்ம ராஜர்தானும்
+                    பையவே வாக்கினைகள் செய்யக்கண்டேன் பாழ்நரகில் இழுத்துபோகக் கண்டேன்தானே
+
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">Even if you say it's a lie, I will tell you what I saw.
+                    I saw Pulipani. He committed many sins on Earth. Due to his sinful actions, he was sent to hell and subjected to punishments...</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge badge-danger"><h6>7. Punnākkar</h6> </span><br><br>
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2894</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">தானான <b>புண்ணாக்கர்</b> தன்னைக்கண்டேன் தாக்கான அவர்செய்த கொடுமைமெத்த
+                    தேனான எனதையர் காலாங்கிநாதர் தேர்வேந்தர் ஆனவரும் சொன்னதுண்டு
+                    பானான புண்ணாக்கர் தன்னையானும் பரமனிட கைலைதனில் கண்டேனப்பா
+                    கோனான புண்ணாக்கர் செய்தபாவம் கோடியுண்டு லக்கோயில்லை என்பார்காணே
+
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">
+                    I saw Punnākkar Siddhar. My Guru, Kālāngi Nāthar, also mentioned the benevolent deeds performed by him. I witnessed him in Kailasa.
+                    He has committed several sins </p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2895</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">காணவே அவருக்கு வாக்கினைகள் கண்கொள்ள முடியாது வைகுண்டத்தில்
+                    தோணவே மாடுகட்டி <b>புண்ணாக்கீயார்</b> தொடர்வழக்கு மெத்த அதிகாரத்தாரம்
+                    வேணவே வட்டிக்கு வட்டிவாங்கி மேதினியில் இருந்துபல மோசஞ்செய்து
+                    நாணவே நாணயங்கள் அதிகஞ்சொல்லி நயமுடனே வஞ்சகமும் செய்தார்தாமே
+
+
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">I witnessed the punishments meant for him in Vaikunta. He gave money to the people and, with that money,
+                    he bought cows and accumulated a lot of wealth. It is because of this reason that punishments were inflicted upon him..</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge badge-danger"><h6>8. Sattamuni</h6> </span><br><br>
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2897</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">சண்டியான் <b>சட்டமுனி</b> தன்னைக்கண்டேன் தகைமையுடன் அவர்செய்த பாவங்கேளு
+                    அண்டிவந்த சீஷருக்கு உபதஞ்சொல்லி அநியாய மாகவல்லோ நூல்மறைத்தார்
+                    கண்டிதமாய் பாடல்களை சொன்னார்போல கருமறைவு காரணத்தை மறைத்துப்போட்டார்
+                    பண்டிதங்கள் இல்லாமல் செய்ததாலே பாவம்வந்து சேர்ந்ததென தண்டித்தாரே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">I saw Sattamuni. I heard about the sins he committed. He misled the person who came believing in him and gave
+                    false advice, hiding the truth in the book, and for his sins, he was punished as well.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2899</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">பார்க்கையிலே சாத்திரங்கள் மறைப்புமெத்த பாழாகி மாந்தரெல்லாம் சுட்டுமாண்டார்
+                    தீர்க்கமுடன் மறைபொருளை ஒளித்துச்சொல்லி திடங்குலைந்து போவதற்கு திறவுசொல்லி
+                    சேர்க்கவே ஒன்றுவிட்டு முன்பின்னாக செழிப்புடனே உட்பொருளை அறியாமற்றான்
+                    கார்க்கவே நூலதனைக் கண்ணாற்காட்டி கருவாகத் தான்மறைத்தார் சித்தர்தாமே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">Due to the sins committed by that Siddhar, many people have suffered greatly because he concealed the truths in the scriptures and misled them.
+                    He deserves punishment for the wrongdoing of obscuring the truth in his book.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge badge-danger"><h6>9. Karuvoorar </h6> </span><br><br>
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2903</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">தாமான போகர்முனி சாற்றக்கேளும் சதாகாலம் வைகுண்டம் தன்னில்யானும்
+                    வாமான ஆக்கினையின் பக்கந்தன்னில் வாகுடனே சுற்றிவரும் போதிலப்பா
+                    நாமான <b>கருவூரார்</b> தன்னைக்கண்டேன் நாயகனார் செய்ததொரு வண்மைகேளு
+                    கோமானாம் அரசருக்கு வாதஞ்சொல்லி கோடிபொருள் தானிழக்க செய்தார்தாமே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">When I entered Vaikunta, I saw Karuvurār in the place where punishments are given. He was punished for the sins he committed,
+                    which involved embezzling billions of assets in the name of offering pleasure to the kings.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+            <span class="badge badge-danger"><h6>10. Rama Devar </h6> </span><br><br>
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2923</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">மெய்யான இன்னமொரு மார்க்கம்பாரு மேதினியில் <b>இராமதேவர் </b>செய்தகூத்து
+                    பொய்யான சாத்திரத்தை மெய்யதாகப் புகட்டினார் லோகத்து மாந்தர்க்கப்பா
+                    துய்யமுடன் சாத்திரத்தைப் பார்த்துப்பார்த்து துறைகெட்டு முறைகெட்டு துன்பப்பட்டு
+                    பையவே வெகுபேர்கள் சுட்டலைந்து பாடுபட்டு மாண்டார்கள் கோடியாமே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">I will tell you about the sinful act committed by the sage called Ramadevar.
+                    He proclaimed the false scriptures as truth. Due to considering those false scriptures as truth and following
+                     the methods and paths mentioned in them, many people suffered and faced death</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+            <span class="badge badge-danger"><h6>11. Macha Muni</h6> </span><br><br>
+
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2940</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">விதிக்கையிலே இன்னமொரு அதிசயங்கள் வினவுடனே யாமுரைப்போம் இன்னங்கேளு
+                    துதித்தலுடன் <b>மச்சமுனி </b>தன்னையானும் துப்புரவாய் வைகுண்ட பதியில்கண்டேன்
+                    மதிக்கவே சாத்திரத்தை மறைவுபேசி மகத்தான நூல்களையே கெடுத்துப்போட்டார்
+                    பதிக்கமுடன் மாந்தர்க்குப் பொய்பொய்யாக பாடிவிட்ட படியாலே கர்மமாச்சே
+
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">Still, I will share many wonders. I saw Machamuni in the  Vaikunta
+                    He, too, spoke falsehoods in the scriptures and obscured the truths. Due to speaking many falsehoods to the people, he also incurred sin.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+            <span class="badge badge-danger"><h6>12. Dakshinamurthy </h6> </span><br><br>
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2946</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">ஆச்சப்பா இன்னமொரு அதிசயங்கேள் அப்பனே யானறிந்த வரைக்குஞ்சொல்வேன்
+                    வாச்சலுடன் <b>தட்சண மூர்த்திதன்னை</b> வைகுண்டப் பதிதனிலே கண்டேன்யானும்
+                    கூச்சலுடன் கிங்கிலியர் தூதர்தாமும் குய்யோதான் முறையுமென்று அபயமிட்டு
+                    பேச்சுடனே தட்சணா மூர்த்தியாரை பெருமையுடன் விசாரணையில் பார்த்திட்டேனே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">
+                    I will tell you another wonder. I saw Dakshinamurthy in the Vaikunta .
+                     The celestial beings known as Kingilyars were eagerly observing Dakshinamurthy in the process of divine inquiry.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2947</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">பார்க்கையிலே <b>தட்சணா மூர்த்தியாரும்</b> பாடல்களை வெகுவாக மறைத்துப்போட்டார்
+                    சேர்க்கமுடன் வாதத்தை முன்பின்னாகச் செப்பினார் திரட்டுமுதல் உளவுமார்க்கம்
+                    மூர்க்கமுடன் மருந்துவகை பாஷாணத்தை முன்பின்னால் பேர்மாற்றி பேருறைத்தார்
+                    தீர்க்கமுடன் சொன்னதினால் மாந்தர்யாவும் தேசத்தில் சுட்டலைந்து கண்கெட்டாரே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">Dakshinamurthy, too, obscures the truths in the scriptures.
+                    He has modified and distorted the meaning of the term "Rasavadam," which refers to the medicinal properties.
+                    He has also concealed the knowledge of various medicinal treatments and languages.
+                    Due to this, many people who heard his teachings were led astray without knowing the truth and suffered the consequences.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge badge-danger"><h6>13. Romarishi</h6> </span><br><br>
+
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2953</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">மேவவே இன்னமொரு தெரிசனங்கேள் மேன்மையுடன் யான்கண்ட வரைக்குசொல்வேன்
+                    காவலுட <b>ரோமரிஷி</b> தன்னைக்கண்டேன் கருவாக வைகுண்டம் தன்னிலப்பா
+                    ஆவலுடன் அவர்பக்கல் யானுஞ்சென்றேன் அப்பனே கேள்விகள் அனேகமுண்டு
+                    பாவமுடன் புண்ணியங்கள் இரண்டைத்தானும் பராகரித்துக் கேள்விகளும் கேட்கலாச்சே
+
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">I will tell you more about what I know. I saw Romarishi in that Vaikunta .
+                    People asked him questions, examining the accounts of sin and merit.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2954</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">கேட்கவென்றால் அவர்மீதில் குற்றமெத்த கேள்விகளும் அங்குண்டு சொல்லொணாது
+                    நீட்கமுடன் சாத்திரத்தை வெகுவாய்ச்சொல்லி நீடாழி உலகமெலாம் மயங்கப்பண்ணி
+                    தாட்கையுடன் <b>ரோமரிஷி</b> கோர்வையாவும் தன்மையுடன் முன்பின்னாய் பாடிவைத்தார்
+                    மீட்கமுடன் கோர்வைதனில் நாலுகாப்பு மாளவே முன்பின்னாய்ப் பாடினாரே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">மேலும் நான் அறிந்த்வற்றை சொல்லுகிறேன் கேளு. அந்த வைகுண்டத்தில்
+                    ரோமரிஷியை கண்டேன். அவரிடத்திலும் பாவம் புண்ணியம் கணக்குகளை பரிசோதித்து கேள்விகள் கேட்டனர்.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge badge-warning"><h6>14. Vilaada Rishi, Vyaasamuni, Suthamuni, Gurumuni</h6> </span><br><br>
+                     <div class="card-group">
+                <div class="card border-primary mb-3 ">
+                  <div class="card-header text-center"><b> 🎵 Song Number -  2958</b></div>
+                  <div class="card-body">
+
+                    <p class="card-text text-primary">தானான இன்னம்வெகு அதிசயங்கள் தன்மையுடன் சொல்லுகிறேன் தரணியோர்க்கு
+                      வேனான <b>விலாடரிஷி</b> தன்னைக்கண்டேன் <b>வியாசமுனி சூதமுனி </b>தன்னைக்கண்டேன்
+                      கோனான <b>குருமுனி</b> தன்னைக்கண்டேன் கொற்றவனார் போகரிஷி தன்னைக்கண்டேன்
+                      தேனான திருமூலக் கூட்டத்தார்கள் தெய்வபுற பதிதனிலே கண்டேன்பாரே
+
+                      </b></p>
+                      <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                  </div>
+                </div>
+                <div class="card border-primary mb-3">
+                  <div class="card-header text-center"><b>💬 Explanation</b></div>
+                  <div class="card-body">
+                    <p class="card-text text-primary">
+                      I saw many sages in the Vaikunta. I saw Vilaada Rishi, Vyaasamuni, Suthamuni, and Gurumuni, among others.</p>
+                       <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                  </div>
+                </div>
+              </div>
+
+              <span class="badge badge-warning"><h6>15. Sivavaakkiyar,Idaikkadar, Agappey Siddhar,<br> Kaasinathar, Vararishi,Sundarar</h6> </span><br><br>
+                <div class="card-group">
+                  <div class="card border-primary mb-3 ">
+                    <div class="card-header text-center"><b> 🎵 Song Number -  2959</b></div>
+                    <div class="card-body">
+
+                      <p class="card-text text-primary">பார்த்தேனே சிவவாக்கியர் தன்னைக்கண்டேன் பாலகனாம் <b>இடைக்காடர்</b> தன்னைக்கண்டேன்
+                        மூர்த்தவனாம் <b>அகப்பேய்</b> சித்துதம்மை முடியோடும் சடையோடும் யானுங்கண்டேன்
+                        தீர்த்தகிரி தனிலிருந்த <b>காசிநாதர்</b> திறமுடனே கொண்டுவர கண்டேன்யானும் ஏர்த்திடவே <b>வரரிஷி</b> தன்னைக்கண்டேன்
+                        எழிலான <b>சுந்தரரைக்</b> கண்டேன்தானே
+                        </b></p>
+                        <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                    </div>
+                  </div>
+                  <div class="card border-primary mb-3">
+                    <div class="card-header text-center"><b>💬 Explanation</b></div>
+                    <div class="card-body">
+                      <p class="card-text text-primary">I saw additional sages in the Vaikunta, including Sivavaakkiyar,
+                        Idaikkadar, Agappey Siddhar, Kaasinathar, Vararishi, and Sundarar.</p>
+                         <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                    </div>
+                  </div>
+                </div>
+
+                <span class="badge badge-danger"><h6>16. Krishnan</h6> </span><br><br>
+                <div class="card-group">
+                  <div class="card border-primary mb-3 ">
+                    <div class="card-header text-center"><b> 🎵 Song Number -  2967</b></div>
+                    <div class="card-body">
+
+                      <p class="card-text text-primary">உண்டான அதிசயங்கள் இன்னஞ்சொல்வேன் உம்மைபிரான் பதியினது காதையாவும்
+                        திண்டான <b>கிருஷ்ணாவ</b> தாரந்தானும் திகழுடனே வெகுகோடி மாதர்தம்மை
+                        பாண்டான வையகத்தில் கற்பழிந்து பாவையரை லீலையது செய்ததாலும் கண்டேனே வைகுண்ட பதியில்தம்மை
+                         கரியமால் ஆக்கினைகள் சொற்பமாமே
+                        </b></p>
+                        <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                    </div>
+                  </div>
+                  <div class="card border-primary mb-3">
+                    <div class="card-header text-center"><b>💬 Explanation</b></div>
+                    <div class="card-body">
+                      <p class="card-text text-primary">I will tell you more wonders. Krishna, known for his Krishna Avatar
+                        raped many girls .Due to his actions, he earned punishments in the Vaikunta </p>
+                         <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                    </div>
+                  </div>
+                </div>
+
+                <span class="badge badge-warning"><h6>17. Kudambai siddhar</h6> </span><br><br>
+                <p style="color:rgb(30, 156, 146);"> In the song mentioned below, Bogar mentioned that Kudambai Siddhar
+                   meditated while holding his breath for a long time and has also passed away.</p>
+                   <div class="card-group">
+                    <div class="card border-primary mb-3 ">
+                      <div class="card-header text-center"><b> 🎵 Song Number -  5934</b></div>
+                      <div class="card-body">
+
+                        <p class="card-text text-primary">கேளேதான் ஆடியாந் திங்களப்பா கெவனமுடன் விசாகமென்ற மூன்றாங்காலில்
+                          நானப்பா தான்பிறந்த <b>குதம்பைசித்து</b> நலமுடனே திரிகால பூசைசெய்து
+                          வேளப்பா யாகமது முடித்துமல்லோ வேள்வியுடன் பாலாமிர்தம் உண்டசித்து
+                          ஆளப்பா பெரியோர்கள் நேசம்பெற்று வப்பனே மரப்பொந்தில் இருந்தசித்தே
+                          </b></p>
+                          <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <span class="badge badge-danger"><h6>18. Pambatti Siddhar </h6> </span><br><br>
+                  <p style="color:rgb(30, 156, 146);">
+                    In the song mentioned below, Bogar mentioned that Pambatti Siddhar meditated while holding his breath for a long time and has also passed away.</p>
+                   <div class="card-group">
+                    <div class="card border-primary mb-3 ">
+                      <div class="card-header text-center"><b> 🎵 Song Number -  5936</b></div>
+                      <div class="card-body">
+
+                        <p class="card-text text-primary">மாயான சித்தல்லோ மகிமைபாரு மகத்தான புலிப்பாணி மைந்தாகேளு
+                          தாயான <b>பாம்பாட்டி</b> சித்தரப்பா தாரணியில் நெடுங்கால மிருந்தசித்து
+                          காயான முப்பழமும் பாலுங்கொண்டு கலியுகத்தில் நெடுநாளாய் இருந்தசித்து
+                          சேயான பாம்பாட்டி சித்துதாமும் சீருலகில் பிறந்ததொரு சித்துதானே
+                          </b></p>
+                          <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                      </div>
+
+                    </div>
+                    <p style="color:rgb(241, 58, 7);"> <i>In his songs, Pambatti Siddhar talks about the magical powers he possesses.
+                      Using such mystical powers on Earth is considered a sinful act. Furthermore, he claims to be equal to God.
+                      Based on these observations, Pambatti Siddhar appears to be an impure Siddhar.
+                    </i></p>
+
+                       <div class="card border-primary mb-3 ">
+                        <div class="card-header text-center"><b> 🎵 Songs of pambatti siddhar </b></div>
+                        <div class="card-body">
+                          <p class="card-text"><small class="text-muted">Song Number -  27 </small></p>
+                          <p class="card-text text-primary">தூணைச்சிறு துரும்பாக தோன்றிடச் செய்வோம்
+                            துரும்பைப் பெருந்தூணாகத் தோற்றச் செய்குவோம்
+                            ஆணைபெண்ணும் பெண்ணை யாணு மாகச் செய்குவோம்
+                            ஆரவாரித் தெதிராய்நின் றாடு பாம்பே.
+                            </p>
+                          <p class="card-text"><small class="text-muted">Song Number -  28 </small></p>
+                          <p class="card-text text-primary">எட்டுமலை களைப்பந்தாய் எடுத்தெ றிகுவோம்
+                            ஏழுகட லையுங்குடித் தேப்ப மிடுவோம்
+                            மட்டுப்படா மணலையும் மதித்திடுவோம்
+                            மகாராஜன் முன்புநீ நின் றாடுபாம்பே.
+                            </b></p>
+                           <p class="card-text"><small class="text-muted">Song Number -  29 </small></p>
+                          <p class="card-text text-primary">மண்டலமுற் றுங்கையால் மறைத்து விடுவோம்
+                            வானத்தையும் வில்லாக வளைத்து விடுவோம்
+                            தொண்டருக்குச் சூனியஞ் சொல்லிக் காட்டுவோம்
+                            தோன்றலுக்கு முன்பு நின் றாடாய் பாம்பே.
+
+                            </b></p>
+
+                           <p class="card-text"><small class="text-muted">Song Number -  30 </small></p>
+                          <p class="card-text text-primary">மூண்டெரியும் அக்கினிக்குள் மூழ்கிவருவோம்
+                            முந்நீருள் இருப்பினு மூச்ச டக்குவோம்
+                            தாண்டிவரும் வன்புலியைத் தாக்கி விடுவோம்
+                            தார்வேந்தன் முன்புநீ நின் றாடு பாம்பே.
+                            </b></p>
+
+                         <p class="card-text"><small class="text-muted">Song Number -  31 </small></p>
+                          <p class="card-text text-primary">செப்பரிய மூன்றுலகுஞ் செம்பொன் னாக்குவோம்
+                            செங்கதிரைத் தண்கதிராய்ச் செய்து விடுவோம்
+                            இப்பெரிய உலகத்தை இல்லாமற் செய்வோம்
+                            எங்கள் வல்ல பங்கண்டுநீ யாடு பாம்பே.
+                            </b></p>
+
+                           <p class="card-text"><small class="text-muted">Song Number -  32 </small></p>
+                          <p class="card-text text-primary">வேதன்செய்த சிருஷ்டிகள்போல் வேறுசெய்குவோம்
+                            வேதனையு மெங்கள் கீழே மேவச் செய்குவோம்
+                            <b>நாதனுடன் சமமாக நாங்களும் வாழ்வோம்</b>
+                            நாங்கள் செய்யும் செய்கையிதென் றாடு பாம்பே.
+                            </b></p>
+
+                          <p class="card-text"><small class="text-muted">Song Number -  34 </small></p>
+                          <p class="card-text text-primary">சிறுபுலி யானையாளி சிங்க முதலாய்ச்
+                            சிற்றடிக்குக் குற்றேவல் செய்யச் சொல்லுவோம்
+                            <b>வீறுபெருங் கடவுளை எங்களுடனே
+                            விளையாடச் செய்குவோமென் றாடு பாம்பே</b>
+
+                            </b></p>
+                        </div>
+
+                      </div>
+                  </div>
+                  <span class="badge badge-danger"><h6>19. Gorakkar</h6> </span><br><br>
+                  <p style="color:rgb(30, 156, 146);">
+                    <i>The sage named Gorakkar, in his book titled "Chandirarekai," describes how he mixed marijuana in rice to make people faint.
+                     Using marijuana is considered a sinful act. From this, it is understood that he is also an impure illusion Siddhar (asudha maya Siddhar). </i> </p>
+                    <img class="card-img-top" src="images/korakar.PNG" alt="korakar"><br><br>
+
+                   <span class="badge badge-danger"><h6>20.Minor dieties </h6> </span><br><br>
+                  <p style="color:rgb(30, 156, 146);"> <i>The deities Sangiliyan, Karuppannan, Kannimar,
+                    and the seven goddesses (Brahmi, Maheshwari, Kaumari, Indrani, Narasimhi, Varahi, Chamundi),
+                     Karuvveeran, and Pattrakali in the  practices of black magic ! </i></p>
+
+              <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  3098</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">செய்யவே குட்டியெனும் வசியமானால் ஜெகத்திலே கோடிவித்தை யாடலாகும்
+                    பையவே மாந்தர்மேல் ஏவதாகும் பாங்குடனே கல்லதனை எறியலாகும் மெய்யுடனே ஜெகஜால வித்தையப்பா மேதினியில்
+                     ஆருந்தான் செய்யவில்லை பெய்யவே <b>சங்கிலீயன் கறுப்பன்தானும் பேரான அண்ணமார் ஏழுமாமே </b>
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">One can perform  Vasiyam (enchantment) on a powerful kutty sathan (small devil/puppet/doll).
+                     According to this belief, various tasks can be accomplished on people through the influence of the kutty sathan.
+                     kutty sathan can be instructed to throw stones at people.
+                     Additionally, Sangiliyan, Karuppannan, and the seven goddesses Kannimar can be influenced through Vasiyam (enchantment) to perform various rituals.
+                    </p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  3093</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary"><b>ஏழான வண்ணமார் </b>காவலாளர் எழிலான ஜாலமென்ற மாளிதன்னில் பாழான
+                    <b>வையன்மார் பிடாரிதானும் பச்சையென்ற தேவதையும் காளியோடு</b>
+                    வாழாத குமரிகளாம் சத்தகன்னி வளமுடனே பச்சையென்ற பல்லக்குதன்னை
+                    தாழாமல் தோலதனில் எடுத்துக்கொண்டு தகமையுடன் காளிதனை தூக்குவாரே
+                     </b>
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">
+                    If seven virgins are subjected to Vasiyam (enchantment) they will be lifted by pidari ,
+                     Pachai, and Kali.
+                    </p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  3094</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">தூக்கியே ஜாலமென்ற மாளிதன்னில் துப்புரவாய் காவலுடன் இருந்துகொண்டு
+                    நோக்கமுடன் தேவதையை வசியஞ்செய்து நொடிக்குள்ளே கோடிவித்தை யாடலாகும் பார்க்கவென்றால் லோகமதில்
+                     மாந்தர்யாவும் பதபதைத்து நடுநடுங்கி கதருவார்கள் வாக்குடனே வரமுனக்கு பதமுந்தந்து வாகுடனே செல்லுமென செப்புந்தானே
+                    </p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">By escorting the goddesses into the sanctuary and guarding them,
+                     one can subject those goddesses to Vasiyam (enchantment) and perform countless miracles.
+                      People around the world will fear upon witnessing these miracles. Through the influence of these goddesses,
+                      twe can do good deeds
+
+                    </p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  3100</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">ஆமேதான் பூதமது தன்னைத்தானும் அப்பனே ஜாலமென்ற மாளிதன்னில்
+                     போமேதான் நடுமையம் மத்திவாசல் பொங்கமுடன் <b>கறுவீரன் பத்திரகாளி</b> வேமேதான் <b>கறுப்பண்ணன் டாகினி</b>
+                      தானும் மிக்கான <b>காட்டேரி சங்கிலிநாயன் </b>தாமேதான் சொன்னபடி மசானவீறி சட்டமுடன் தெய்வங்கள் அனேகமுண்டே
+                  </p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">If you want to perform Vasiyam (enchantment) on a specific ghost in this sanctuary,
+                    there are various deities present, such as Karuvveeran, Pattrakali, Karuppannan, Dakini, Kaatteri, and Sangiliyan.
+
+                    </p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div><br>
+            <ul>
+           <h6 style="color:rgb(233, 8, 8);"><li>Konganavar, Idaikkadar, Brahmamuni, Pulippani, Punnagakar, Sattamuni, Karuvurar,
+            Ramadevar, Machamuni, Dakshanamurthi, Romarishi, Krishna, Pambatti, Gorakkar, and other siddhars are said to have performed evil
+            deeds on Earth. After their death, they were punished in the galaxes. Vallalar states that these siddhars were impure and
+            engaged in unethical practices. They are the ones who hid the truth about <b>Lord Arutpermjothi </b></li> </h6><br>
+
+         <h6 style="color:rgb(241, 221, 4);"><li> Sivavakkiyar, Kamalamuni, Vilaada Rishi, Vyaasamuni, Soodhamuni, Gurumuni,
+          Idaikkadar, Agappey Siddhar, Kasinathar, Vararishi, Sundarar, and Kuthambai are among the siddhars who have passed away, as stated by
+          Bogar</li></h6><br>
+
+          <h6 style="color:rgb(0, 42, 255);"><li>
+            What we understand through this is that it is true that most of the Siddhars whom we worship in temples are deceased.
+             Moreover, none of the impure Maya Siddhars have attained true immortality, as stated by Vallalar in the principle of Suddha Sanmargam.</li> </h6><br>
+
+        <h6 style="color:rgb(0, 42, 255);"><li> Furthermore, just like impure Maya Siddhars, we also worship many deities here,
+           such as Sangiliyan, Karuppannan, Braami, Mageshwari, Kaumari, Indrani, Narasimmi, Varagi, Chamundi, Karuviran, and Pattrakali.
+            These deities are associated with evil practices and black magic.</li> </h6>
+              </ul>
+
+          <div class="alert alert-danger" role="alert">
+            <b> So far, we have deciphered information about the impure Maya Siddhar from the book Bogar-7000.
+               Bogar, who authored this book, was also an impure Maya Siddhar. !
+            </b>
+              </div>
+          <p> <b> <i>Vallalar, in his Holy Book "ThiruArutpa," stated that he could perceive the infinite universes within a second with the grace of Lord Arutperumjothi.</i> </b> </p>
+          <p style="color:rgb(30, 156, 146);"> “ அண்ட கோடி அனைத்தும் காணும் கண்கள் எய்தி யே<br>
+            அறிந்தேன் அங்கைக் கனிபோல் அவற்றில் உள்ள செய்தி யே<br>
+            பிண்ட கோடி முழுதும்காணப் பெற்று நின்னை யே<br>
+            பேசிப் பேசி வியக்கின் றேன்இப் பிறவி தன்னை யே.<br>
+            எனக்கும் உனக்கும் “<br><br>
+            <i>"The above song describes that vallalar  could perceive the infinite universes within a second with the grace of Lord Arutpermjothi."</i>
+            </p>
+          <p>But Bogar used குளிகை (Kuligai) to travel in Astarl galaxies.
+             If Saththini Paadam happens based on these three key elements:
+              1. ஜீவகாருண்யம் - Jeeva karunyam (compassion towards all souls),
+              2. சத்விசாரம் - Satvisaram (seeking the truth about Lord Arutperumjothi), and 3. பரபோகாரம் - Parapokaram
+              (showing unconditional love towards Lord Arutperumjothi), then Lord Arutperumjothi himself will reveal all the
+              secrets about himself and the universe.</p>
+
+             <p> <b>If we practice penance, Vasi Yoga, and other such practices, Arut Sakthi Annai (Sudha Maya - MOTHER-X MATRIX)
+              will grant us mystical superpowers and evaluate us. If we pass her test, we will be granted access to the next level.
+               Otherwise, we will die like impure Maya Siddhars (Asudha Maya Siddhars). </b></p>
+
+             <div class="alert alert-danger" role="alert">
+              <b>Bogar has performed many impure activities using his mystical superpowers! Read the following songs to
+                 learn how Bogar controls the ghost to perform tasks for him. Such activities are considered sinful on Earth.
+              </b>
+                </div>
+             <span class="badge badge-pill badge-danger"><h6>1. குரளி வித்தை (Kurali technique) </h6> </span><br><br>
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  2897</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">கேளேதான் பூதாதி வித்தைசொல்வேன் கெடியான<b> குறளியென்ற பூதந்தானும்</b> வீடேதான்
+                    பிரணவத்தின் வசமதாக்கி வேகமுடன் ஜாலமென்ற மாளிதன்னில்நாளேதான் போகாமல் கதிரோன்முன்னே நளினமுடன்
+                     பூதமதை ஏவல்செய்துசூளேதான் ஜாலமென்ற மாளிதன்னில் சூட்சமுடன் குறளிதனை வசியமாட்டே
+
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">By chanting the mantra 'Om,' we can control the ghost named "Kurali" and ask Kurali to do tasks for us.
+                  </p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  3069</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">ஆட்டேதான் ராஜாதி ராஜர்தானும் அங்ஙனவே தான்மயங்கி வார்த்தைசொல்வார் கேட்டேதான்
+                    <b> காலாங்கி நாதர்தம்மால் கிருபையுடன்</b> ஜாலமென்ற மாளிதன்னில்
+                    நீட்டமுடன் வாசல்வழி சென்றவர்க்கு நிலையான அட்சரத்தை மாரல்செய்து
+                    கூட்டமென்ற குழல்தனிலே ஓதிப்பின்பு கூர்மையுடன் ஓசையது கேட்குந்தானே
+
+
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">The technique performed in a way that even kings would be amazed. With the grace of my guru Kalangi,
+                    I have accomplished this. When the Kurali spirit chants at the entrance, it brings great fortune to those who seek it</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <span class="badge badge-pill badge-danger"><h6>2. Using spirits (souls) to perform tasks for him. </h6> </span><br><br>
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  3086</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">தீட்டையிலே கருமானம் இன்னமொன்று திறமுடனே செப்புகிறேன் மைந்தர்க்காக வாட்டமுடன் ஜெகஜால
+                     கொள்ளிதன்னை வாகுடனே தானழைத்து திட்டங்கூறிதேட்டமுடன் பிரணவத்தை முன்பின்னாகத் தெளிவுடனே ஓதிவைத்த படிநீதானும்
+                      சட்டியே குறளிக்கு பிரணவத்தைக்கூறி சூட்சமுடன் அட்சரத்தை சுறுக்கிமாறே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">First, we need to summon a ghost named "Kolli Pisasu." After that, if we summon a ghost named "Kurali,"
+                    we can communicate with deceased individuals.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  3090</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">ஆடலாம் வெகுதந்திரம் குறளிகொண்டு அப்பனே சூனியமும் இதனாலுண்டு தேடவே
+                     குட்டியது மலைக்குட்டிதானும் தெளிவுடனே நாம்சொன்ன காரியத்தை ஊடவே ஒளிந்திருந்து வதையச்செய்யும் உத்தமனே
+                      இருள்மாளி காணலாகும் நாடவே ஜாலக்காள் மோகினியுந்தானும் நலமான குட்டியென்ற வீரியந்தானே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">In this Kurali technique, there are many rituals available.
+                     It can also be used for evil activities. By employing this Kurali, we can transform the deceased
+                     individuals into obedient entities and carry out hidden tasks as instructed. We can attain the
+                      hidden wealth that resides within the garland where the obedient entity is placed. Similar to
+                       how Mohini mesmerizes many people, we can utilize the obedient entity for our benefit.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+          <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  3091</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">தானான வீரியனும் ஆரியனாய்வேண்டும் தகமையுள்ள வீரியனாய் இருப்பானானால்
+                     வேனான மந்திரத்தை மிகவும்பேசும் மிக்கான கிரமவிதி தானடத்தும் பானான குருமுறைபோல் யாகஞ்சொல்லும் பாலகனே
+                      யாகமது குறுதிகூறும் தேனன வீரியனாம் குட்டிதன்னை தெளிவுபெற லோகமதில் வசியஞ்செய்யே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">If that deceased soul knows Mantram and Tantram
+                     then they can use the obedient entity to perform various techniques</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  3092</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">செய்யவே குட்டியெனும் வசியமானால் ஜெகத்திலே கோடிவித்தை யாடலாகும் பையவே
+                    மாந்தர்மேல் ஏவதாகும் பாங்குடனே கல்லதனை எறியலாகும் மெய்யுடனே ஜெகஜால வித்தையப்பா மேதினியில் ஆருந்தான்
+                     செய்யவில்லை பெய்யவே சங்கிலீயன் கறுப்பன்தானும் பேரான அண்ணமார் ஏழுமாமே
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">One can perform  Vasiyam (enchantment) on a powerful kutty sathan (small devil/puppet/doll).
+                    According to this belief, various tasks can be accomplished on people through the influence of the kutty sathan.
+                    kutty sathan can be instructed to throw stones at people.
+                    Additionally, Sangiliyan, Karuppannan, and the seven goddesses Kannimar can be influenced through Vasiyam (enchantment) to perform various rituals.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  3093</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">ஏழான வண்ணமார் காவலாளர் எழிலான ஜாலமென்ற மாளிதன்னில் பாழான வையன்மார் பிடாரிதானும்
+                    பச்சையென்ற தேவதையும் காளியோடுவாழாத குமரிகளாம் சத்தகன்னி வளமுடனே பச்சையென்ற பல்லக்குதன்னை தாழாமல் தோலதனில்
+                    எடுத்துக்கொண்டு தகமையுடன் காளிதனை தூக்குவாரே
+
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">If seven virgins are subjected to Vasiyam (enchantment) they will be lifted by pidari ,
+                    Pachai, and Kali.</p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+            <span class="badge badge-pill badge-danger"><h6>3. Using Black hens eggs for medicine purpose</h6> </span><br><br>
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  658</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">ஆகவே அண்டத்தின் கற்பம்கேளு அப்பனே <b>கருங்கோழி சாவலுடன்போடு</b> வாகவே வளர்த்ததின்
+                    <b>முட்டையெல்லாம்</b> வாங்கி வகையாக கல்லுப்புக் குள்ளேவைத்து ஏகவே இருபதுநாள் கழித்தபின்பு எடுத்தல்லோ அயச்சட்டிக் குள்ளேவைத்து
+                     போகவே கெருடனுட கிழங்குசார்விட்டு புகழாக அடுப்பேற்றி எரித்திடாயே
+
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">To prepare a medicine for longevity, mate a black hen with a rooster.
+                     Once the hen lays an egg, mix that egg with special salt and put the mixture inside a metal pot. Then,boil  it along with yam.
+                  </p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-group">
+              <div class="card border-primary mb-3 ">
+                <div class="card-header text-center"><b> 🎵 Song Number -  659</b></div>
+                <div class="card-body">
+
+                  <p class="card-text text-primary">எரித்திடவே சாரெல்லாம் சுண்டிப்பாரு மிதமாக ஆறவிட்டு வைத்துக்கொண்டு பரித்திடவே
+                     மேலோடு அண்டமொன்றுவாங்கி பதறாமல் ரண்டாக்கி பச்சந்திக்கொள்ளு தரித்திடவே தினமொன்று மேலோடுவாங்கி சாதகமாய்த்
+                      தினந்தோறும் ஒவ்வொன்றாக மரித்திடவே எரித்தசலம் கற்பாந்தகாலம் வைத்திருக்க வேணுமென்றால் மண்கலந்தான்கொள்ளே
+
+                    </b></p>
+                    <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+
+                </div>
+              </div>
+              <div class="card border-primary mb-3">
+                <div class="card-header text-center"><b>💬 Explanation</b></div>
+                <div class="card-body">
+                  <p class="card-text text-primary">
+                    After the egg is boiled and the liquid is drained, take the egg out and cut it into two pieces.
+                    Consume one egg daily. If you wish to preserve the eggs for a longer period, boil them in a sand pot instead of a metal pot.
+                  </p>
+                     <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="card border-primary mb-3">
+              <div class="card-header text-center"><b>🎵 Song Number -  5098</b></div>
+              <div class="card-body">
+                <p class="card-text text-primary">துதியான யின்னமொரு ஜாலங்கேளு துப்புரவாய் <b>கோழியென்ற முட்டைதானும்</b>
+                  பதியான வர்ணமது மேலேயேற்றி பாங்குடனே காரமென்ற காடிதன்னில்
+                  விதியான மூன்றுநா ளூரப்போடு விருப்பமுடன் மூன்றுநாள் கழிந்தபின்பு
+                  மதிபோன்ற பூனீராம் கிளாசுபாத்திரம் மதிப்புடனே போட்டடைக்க விதிதான்கேளே
+                  </p>
+                   <p class="card-text"><small class="text-muted">Bogar 7000 - Seven Chapters</small></p>
+              </div>
+            </div>
+
+            <p><b>By employing the Kurali technique and harnessing the power of spirits,bogar engages in various impure rituals.
+              However, Bogar, without possessing compassion for all souls, utilized the black hen's egg for medicinal purposes.
+               Furthermore, he concealed the secret of Lord Arutperumjothi. He crafted an idol called "Muruga," and people continue to worship that statue,
+              considering it as a deity.</b></p><hr>
+
+
+
+
+
+                <div class="alert alert-danger" role="alert">
+                 <h6><b>The best examples of psychic voice communication can be found in books such as the Bible and the Quran.Lets Decode it . </b></h6>
+                </div>
+                <img class="card-img-top" src="images/Slide3.PNG" alt="gods's level"><br><br>
+
+
+                <span class="badge badge-danger"><h6>1. Quran </h6> </span><br><br>
+                <p style="color:rgb(30, 156, 146);"> <b>Every one of us know Quran was written based on Psychic voice as dictated by a angel Gabriel </b> </p>
+
+                <div class="card-group">
+                  <div class="card border-primary mb-3 ">
+                    <div class="card-header text-center"><b> Quran</b></div>
+                    <div class="card-body">
+
+                      <p class="card-text text-primary">The Quran is considered the holy book of Muslims.
+                        It contains the divine revelations conveyed to Prophet Muhammad through the angel Gabriel.
+                        It encompasses teachings, laws, stories, and compilations of various events, all of which are cherished by Muslims as a source of faith.
+                        </b></p>
+                        <p class="card-text"><small class="text-muted">Source: Wikipedia </small></p>
+
+                    </div>
+                  </div>
+                  <div class="card border-primary mb-3">
+                    <div class="card-header text-center"><b>Quran </b></div>
+                    <div class="card-body">
+                      <p class="card-text text-primary">Through your trading, and on the days specified, Allah has granted
+                        (cattle such as cows, buffaloes, and camels) to be sacrificed in His name, mentioning His glorious name over the sacrificial animals,
+                         and you are directed to distribute them among the needy. Therefore, from the offered sacrifices, you too may partake and feed
+                          the poor and the destitute.</p>
+                         <p class="card-text"><small class="text-muted">Quran: 22:28 </small></p>
+                    </div>
+                  </div>
+                  <div class="alert alert-danger" role="alert">
+                    <b>In quran without compassion towards living beings , it says people can consume meat & kill animals for food.
+                      These kind of impurity available in quran because , Prophet Muhammad was not guided by lord arutperumjothi instead
+                      he was guided by A being named "Gabriel".</b>
+                  </div>
+                </div><hr>
+
+                <span class="badge badge-danger"><h6>2. Bible</h6> </span><br><br>
+                <p style="color:rgb(30, 156, 146);"> <b>
+                  Just like in the Quran, the Bible also follows the same !
+                 </b> </p>
+
+                 <div class="card-group">
+                  <div class="card border-primary mb-3 ">
+                    <div class="card-header text-center"><b> Bible</b></div>
+                    <div class="card-body">
+
+                      <p class="card-text text-primary"> 1.But the angel said to the women, “Do not be afraid, for I know that you seek Jesus who was crucified. - [Mattew 28:5]<br>
+                        2.And the angel answered him, “I am Gabriel. I stand in the presence of God, and I was sent to speak to you and to bring you this good news – [Luke 1:19]<br>
+                        3.In the sixth month the angel Gabriel was sent from God to a city of Galilee named Nazareth – Luke 1:19<br>
+                        4.Behold, I send an angel before you to guard you on the way and to bring you to the place that I have prepared. – Exodus [ 23:20]<br>
+                        5.And behold, an angel of the Lord stood next to him, and a light shone in the cell. He struck Peter on the side and woke him, saying, “Get up quickly.” And the chains fell off his hands – [Acts 12:7]<br>
+                        6.And the angel said to him, “Dress yourself and put on your sandals.” And he did so. And he said to him, “Wrap your cloak around you and follow me.”  - [Acts 12:8]<br>
+
+
+                        </b></p>
+                        <p class="card-text"><small class="text-muted">பைபிள் </small></p>
+
+                    </div>
+                  </div>
+                  <p><b>Furthermore, Jesus Christ, without  compassion for living beings,
+                     demonstrated the act of feeding people with fish. Below are references that support this claim:</b></p>
+                  <div class="card border-primary mb-3">
+                    <div class="card-header text-center"><b>Bible</b></div>
+                    <div class="card-body">
+                      <p class="card-text text-primary">1.Jesus said to them, “Children, do you have any fish?” They answered him, “No.” [John 21:5]<br>
+                        2.When they got out on land, they saw a charcoal fire in place, with fish laid out on it, and bread. [John 21:9]<br>
+                        3.Jesus said to them, “Bring some of the fish that you have just caught.” [John 21:10]<br>
+                        4.Simon Peter went up, and drew the net to land full of great fishes, an hundred and fifty and three:
+                        and for all there were so many, yet was not the net broken. [John 21:11]<br>
+                        5.Jesus came and took the bread and gave it to them, and so with the fish. [John 21:13]<br>
+                        6.And taking the five loaves and the two fish, he looked up to heaven and said a blessing and broke the loaves and gave
+                         them to the disciples to set before the people. And he divided the two fish among them all. [Mark 6:41]
+                        </p>
+                         <p class="card-text"><small class="text-muted">பைபிள் </small></p>
+                    </div>
+                  </div>
+                  <p><b>The reason behind all this is that there is no compassion.</b></p>
+                </div><hr>
+                <div class="alert alert-info" role="alert">
+                 <b> Below are the statement told by vallalar regarding puranas and other spirtiual beliefs !</b>
+                </div>
+                <ul class="list-group">
+                  <li class="list-group-item"><i>In the Puranas, there are 63 Nayanmars and various other divine beings are all just philosophies.
+                    By studying and understanding them, each deity reveals different aspects. Similarly, in Shaivism, the fight between Sauraadhi (solar deities) and
+                    Chandaadi (lunar deities) are also philosophies. The battles, such as the Surapadman battle, are also stories. Likewise, the life
+                     stories of saints like Manikkavasagar are also philosophies. Scholars have compiled their scriptures, including Thevaram and Thiruvasagam,
+                     and established temples dedicated to them. They have associated the names of these entities with specific periods and performed rituals
+                     according to their prescribed times. The divine manifestations with their inherent divine powers, as mentioned earlier, have existed in the past,
+                     present, and will continue in the future. If we follow and understand the  teachings in the same way, we too can attain such divine experiences.
+                     This applies to the divine plays and stories found in the Bhagavata Purana as well. That's all. </i></li>
+                  <li class="list-group-item"> <i>The 63 Nayanmars and the philosophies associated with the Periyapuranam are  just philosophies. Exploring and
+                     implementing them individually will bestow various spiritual benefits. Ganapathi, Subramanya Swamigal, and other deities
+                     are just stories. <b>These truths will be revealed during the period Suddha Sanmargam</b> </i></li>
+
+                  <li class="list-group-item"><i>Manikkavasagar and 63 Nayanmars are not human beings they are just philosophies. Devaram Thiruvasagam etc
+                     are not sung by the them, but they are  fictional stories of Siddhas about some Siddhis (The myistic super power).
+                      Siddhas wrote those songs, purunas  and described they (Manikkavasagar ,63 Nayanmars,etc.. ) have written those songs .
+                      These are all not true . <b>The principles and truths of these will be  openly revealed during the period of suddha sanmargam </b></i></li>
+
+                  <li class="list-group-item"><i>In various religious scriptures, there are errors found in multiple places.
+                    The reason for this is that those who created them were influenced by the illusion (maya). As a result, mistakes
+                    have occurred in the past and continue to persist.Only those enlightened individuals who have transcended maya can avoid making mistakes.
+                     Other individuals are prone to errors.<b> Those mistakes will be revealed during the period when Suddha Sanmargam shines its light. </b></i></li>
+                </ul><br><br>
+                <h5 style="color:rgb(154, 71, 44);"> <i>Indeed, this is the period of Suddha Sanmargam. That is why the truths about the Siddhars, including their impurities,
+                   and the errors present in the scriptures are being openly revealed in the artilce named "Varaverpu Malai" </i></h5><br>
+
+              <p><b>Furthermore, in his Thiruvarutpa, Vallalar states that spiritual beings beyond the state of Sadashiva, such as Sakthi or Sathargal (Divine souls and creators),
+                are performing tasks for him. This privilege was granted to Vallalar by Lord Arutperumjothi.
+              </b></p>
+
+                <img class="card-img-top" src="images/Slide3.PNG" alt="GOD'S LEVEL"><br><br>
+
+                <p style="color:rgb(30, 156, 146);"> “ <b>சத்திசத் தர்களெலாஞ் சார்ந்தென தேவல்செய் <BR>
+                  சித்தியை யளித்த தெய்வநற் றாயே</b>  - 1097 “<br>
+                  Divine souls and creators are performing tasks for Vallalar as per his wishes!
+
+                  </p>
+              <p><i><b>We should not compare Vallalar with Assudha maya siddhargal.</i></b></p>
+              <p><i>What we come to know from this is that for such a long time, impure Siddhars who were present in the temples and in samadhis, have all deceased
+                 and reached the Kailayapathi</i> </p>
+            <p>
+              <i>It is necessary to refrain from worshiping the life samadhis of impure Siddhars.
+               But Vallalar told we can visit the place of Pure maya elders. Example for pure maya elders (Suddha maya elders)
+              may be  Thirmoolar,Thiruvalluvar. Futher more people who have attined the stage of of Sathar is called as Pure maya elders.
+            But we don't know who are the peoples who attained the stage of sathar. Vallalar in his last speech perupedasam he mentioned
+          Pure illsuion elders are not avilable in planet earth. So instead of searching the Pure illusion elders , lets show our unconditional love
+        towards almight Lord ArutPerumJothi and worship him with true love. </i></p>
+
+
+          <p style="color:rgb(220, 38, 13);"> <b><i>Furthermore, there are numerous spiritual practitioners on Earth who teach various forms of yoga, including meditation techniques, Kundalini practices,
+             and other yogic arts. They are all working under the impure illusion siddhas (Assudha maya siddhArgal).</i></b> </p>
+          <p><i>  These impure Maya Siddhas can communicate with us through dreams and psychic voices. They do not possess a human body.</i></p>
+          <p> <b><i>Furthermore, these impure Maya Siddhas, need to reborn in planet earth and  after obtaining a human body,
+            they need to follow suddha sanmargam to attain real immortality.</i></b></p>
+
+             <p><b><i>Those who has a human body can attain true immortality, as stated by Vallalar. Henceforth, without wasting our time,
+              let us follow the principle of Suddha Sanmargam and achieve true immortality!</i></b></p>
+             <ul>
+              <h6 style="color:rgb(0, 42, 255);"><li><b><i>Let us stop comparing vallalar with asudha maya siddhas.</b> </i></li> </h6>
+            <h6 style="color:rgb(0, 42, 255);"><li><b><i>Let us stop injecting yogic practices inside the Suddha Sanmargam.
+              Suddha sanmargam principle was given to vallalar directly by Lord Arutperumjothi.</i>
+            </b></li></h6>
+             <h6 style="color:rgb(0, 42, 255);"><li><b> <i>Let us stop comparing the Holy book "ThiruArutpa" With the
+              books of Assudha maya siddhargal.</i>
+             </b></li> </h6> <br>
+                 </ul>
+          <h5 style="color:rgb(154, 71, 44);"><b><i>Indeed, this is the period of Suddha Sanmargam. That is why the truths about the Siddhars,
+            including their impurities, and the errors present in the scriptures are being openly revealed in the artilce named "Varaverpu Malai" !</i>
+          </b></h5><br>
+
+          <div class="alert alert-danger" role="alert">
+           <b><i>To read about Kali Purushan (Ruler of kali yuga) <a href="kali_purushan_en.html" class="alert-link">👆 Click Here 👆</a></b></i>
+          </div>
+</main>
+
+    <footer class="footer">
+        <p class="mb-1">&copy; 2026 சமரச சுத்த சன்மார்க்கம் | வள்ளலார் | அருட்பெருஞ்சோதி</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</div>
+
+

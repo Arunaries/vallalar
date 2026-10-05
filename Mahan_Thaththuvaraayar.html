@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>சமரச சுத்த சன்மார்க்கம் - Vallalar | வள்ளலார் | அருட்பெருஞ்சோதி</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Tamil:wght@300;400;700&family=Tiro+Tamil:ital@0;1&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --color-saffron: #ffea00; /* True Ochre/Saffron - காவி */
+            --color-gold: #FFD700;    /* True Royal Gold */
+            --color-dark: #333333;
+            --color-light-bg: #f3f3f3;
+            --font-heading: 'Tiro Tamil', serif;
+            --font-body: 'Noto Sans Tamil', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-dark);
+            background-color: var(--color-light-bg);
+            margin: 0;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3 {
+            font-family: var(--font-heading);
+            color: var(--color-saffron);
+            text-align: center;
+            margin-top: 0;
+        }
+
+        a { color: var(--color-saffron); text-decoration: none; }
+        a:hover { text-decoration: underline; color: var(--color-gold); }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+            font-weight: 700;
+            font-size: 1.1em;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+        .navbar-nav .nav-link:hover {
+            border-bottom: 2px solid var(--color-gold);
+            color: var(--color-gold) !important;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(252, 248, 243, 0.8), rgba(252, 248, 243, 0.8)), url('placeholder-image.jpg') center/cover no-repeat;
+            min-height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-attachment: fixed;
+        }
+        .hero h1 { color: var(--color-saffron); font-size: 3.5em; margin-bottom: 10px; }
+        .hero p { font-size: 1.5em; color: var(--color-dark); font-style: italic; }
+
+        .section { padding: 60px 0; border-bottom: 1px dashed #DDD; }
+
+        .content-card {
+            background-color: #FFFFFF;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .song-list { list-style: none; padding: 0; }
+        .song-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            border-left: 5px solid var(--color-saffron);
+            background-color: #FFF;
+        }
+        .song-item h3 { text-align: left; margin-bottom: 10px; }
+        .song-text { white-space: pre-wrap; font-size: 0.7em; }
+
+        .footer {
+            background-color: var(--color-saffron);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+        .footer a { color: var(--color-gold); }
+
+        .glow-text {
+            color: var(--color-saffron);
+            text-shadow: 0 0 8px rgba(255, 153, 51, 0.8), 0 0 16px rgba(255, 153, 51, 0.5);
+        }
+        .neon-text-red {
+            color: #ff073a;
+            text-shadow: 0 0 5px #ff073a, 0 0 10px #ff073a, 0 0 20px #ff073a;
+        }
+        .glow-border {
+            border: 1px solid var(--color-saffron);
+            box-shadow: 0 0 10px rgba(255, 153, 51, 0.6);
+        }
+        .screen-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .screen-box {
+            padding: 25px 10px;
+            text-align: center;
+            font-weight: 700;
+            border-radius: 6px;
+        }
+        .heat-bar {
+            width: 100%;
+            height: 20px;
+            background-color: #333;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .heat-fill {
+            width: 75%;
+            height: 100%;
+            background: linear-gradient(90deg, #ffea00, #f00);
+            animation: heatPulse 2s infinite alternate;
+        }
+        @keyframes heatPulse {
+            from { opacity: 0.6; }
+            to   { opacity: 1; }
+        }
+
+        .article-container {
+            max-width:800px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.05);
+            padding: 40px;
+            margin: 60px auto;
+        }
+        .article-title { font-size: 1.2rem; font-weight: bold; }
+        .article-meta { color: #6c757d; font-size: 0.9rem; margin-bottom: 20px; }
+        .article-content p { text-align: justify; line-height: 1.8; }
+
+        /* ===== Poem / Stage card styling (NEW — previously undefined) ===== */
+        .poem-card {
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border: none;
+        }
+        .poem-card .card-header {
+            font-weight: 700;
+            background-color: var(--color-saffron);
+            color: #fff;
+            text-align: center;
+        }
+        .poem-card .card-body p {
+            margin-bottom: 4px;
+        }
+        .poems-cards .card-title {
+            text-align: center;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top" style="background-color: var(--color-saffron); box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);">
+            <div class="container-fluid container">
+                <a class="navbar-brand text-white" href="index.html" style="font-family: var(--font-heading); font-size: 1.5em;"> அருட்பெருஞ்சோதி</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border-color: white;">
+                    <span class="navbar-toggler-icon" style="background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox=%270 0 30 30%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cpath stroke=%27white%27 stroke-width=%272%27 linecap=%27round%27 linejoin=%27round%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3E%3C/svg%3E');"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="info.html">Info About this website</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+
+        <!-- Header Section -->
+        <header class="text-center mb-4">
+            <h1 class="display-4">மகான் தத்துவராயர்</h1>
+        </header>
+
+        <!-- Image Section -->
+        <section class="text-center mb-4">
+            <img src="images/Mahan_Thaththuvaraayar.png" alt="Mahan Thaththuvaraayar" class="img-fluid rounded" id="mahanThathuvaraayarImage" style="max-width: 300px;">
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="intro-section mb-5" id="history">
+            <p>வள்ளலார் நம்முடைய ஆன்மா என்கின்ற சிற்றணுவுக்கு <b>மூன்று அவத்தைகள் </b> உள்ளதாக கூறுகிறார்.அவை <b>நனவு😄,கனவு🙂‍↕️,சுழுத்தி😴</b> என்பவை ஆகும். இதன் வகைகள் பின்வருமாறு பிரியும்.👇👇</p>
+        </section>
+
+        <!-- Stage Cards Section -->
+        <section class="poems-section">
+            <h2 class="h4 text-center mb-4">திரயோதசாந்தமாவது யாதெனில்:</h2>
+            <div class="row poems-cards">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #eb7047; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">1. ஜீவ சாக்கிரம்</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #eb7047; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">2. ஜீவ சொப்பனம்</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #eb7047; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">3.ஜீவ சுழுத்தி</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #db8de1; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">4.நிர்மல சாக்கிரம்</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #db8de1; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">5. நிர்மல சொப்பனம்</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #db8de1; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">6.நிர்மல சுழுத்தி</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #878166; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">7.பர சாக்கிரம்</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #878166; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">8. பர சொப்பனம்</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #878166; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">9. பர சுழுத்தி</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #1b4ce1; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">10. குரு சாக்கிரம்</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #1b4ce1; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">11. குரு சொப்பனம்</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #1b4ce1; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">12. குரு சுழுத்தி</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #1b4ce1; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">13. குரு துரியம்</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #1b4ce1; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">14. குரு துரியாதீதம்</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #28a745; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">15. சுத்த சிவ சாக்கிரம்</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #28a745; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">16. சுத்த சிவ சொப்பனம்</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #28a745; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">17. சுத்த சிவ சுழுத்தி</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #28a745; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">18. சுத்த சிவ துரியம்</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" style="background-color: #28a745; color: #fff;">
+                        <div class="card-body">
+                            <h5 class="card-title">19. சுத்த சிவ துரியாதீதம் </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="intro-section mb-5">
+            <p>இதில் <b>13ஆவது நிலையான குருதுரிய</b> நிலையில் தான் <b>அருட்பெருஞ்ஜோதி ஆண்டவரின் </b>அருள் நமது மனித தேகத்தில் காரிய படும். இந்த நிலையை <b>தத்துவராயர் </b>என்ற மகான் அடைந்துள்ளதாக வள்ளலார் நமக்கு கூறியுள்ளார். <b>மகான் தத்துவராயர்</b> தாம் அடைந்த <b>குருதுரிய </b>நிலையை <b>பத்து பாடல்கள் </b>மூலம் பதிவு செய்துள்ளார்.அந்த பாடல்கள் பின்வருமாறு.👇👇</p>
+        </section>
+
+        <!-- Thathuvaraayar's 10 Songs -->
+        <div class="row">
+            <!-- Poem 1 -->
+            <div class="col-md-6 col-lg-5">
+                <div class="card poem-card">
+                    <div class="card-header"><b>பாடல் - 1</b></div>
+                    <div class="card-body">
+                        <p>உற்றறி வெழவுள விருளகன் றதுபோ</p>
+                        <p>லுதயம்வந் தெழுவுடு வொளியகன் றனவா</p>
+                        <p>னற்றுட அயிர்பொரு ளப்புடன் கவர்ந்து</p>
+                        <p>நாண்மலர்த் தாளிணை நாயினேற் கருளிச்</p>
+                        <p>சற்றென விசுவசாக் கிரகர ணங்கள்</p>
+                        <p>சதுர்த்தெச செலவுநன் கலப்பழிப் பொன்றிற்</p>
+                        <p>பற்றுத றிசைமுகர் பதமென வருளப் </p>
+                        <p>பரிபூர்ண னேபள்ளி யெழுந்தரு ளாயே</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poem 2 -->
+            <div class="col-md-6 col-lg-5">
+                <div class="card poem-card">
+                    <div class="card-header"><b>பாடல் - 2</b></div>
+                    <div class="card-body">
+                        <p>அண்டரும் பரமெழ வறிவகன் றதுபோ</p>
+                        <p>லாதவ னெழவுடு மதியகன் றனவா </p>
+                        <p>லெண்டிசை தொறுந்திரிந் தெனையறி யாதே </p>
+                        <p>யெய்த்தெனை யாண்டுதை சத்தெனு மதிலே </p>
+                        <p>கண்டுகொள் <b>கனவையில்</b> வணமென விருத்திக்</p>
+                        <p>காமிய தாமதுட் காணங்க ளுடனே</p>
+                        <p>பண்டுல களந்தவர் பதமென வருளப் </p>
+                        <p>பரிபூர்ண னேபள்ளி யெழுந்தரு ளாயே</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poem 3 -->
+            <div class="col-md-6 col-lg-5">
+                <div class="card poem-card">
+                    <div class="card-header"><b>பாடல் - 3</b></div>
+                    <div class="card-body">
+                        <p>பத்துட னாலையும் பதைப்பற விருத்திப்</p>
+                        <p>பாரிருந் திவ்வண மென்றருள் புரிய </p>
+                        <p>வத்தம துருவம தாயின தென்ன </p>
+                        <p>வதுமிகு <b>சுழுத்தியவ்</b> வியத்தமா மாயை  </p>
+                        <p>யுத்தம வுருத்திர பதமுநற் பிரகிர்தி </p>
+                        <p>யுனதுட லாமுதற் பாழ்சகற் லட்சணை </p>
+                        <p>பத்திய தறிபிரா ஜூனென வருளப் </p>
+                        <p>பரிபூர்ண னேபள்ளி யெழுந்தரு ளாயே</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poem 4 -->
+            <div class="col-md-6 col-lg-5">
+                <div class="card poem-card">
+                    <div class="card-header" style="background-color: #878166; color: #fff;"><b>பாடல் - 4 (பர நனவு)</b></div>
+                    <div class="card-body">
+                        <p>விரிவுறு காரிய வுபாதிக ளெல்லாம்</p>
+                        <p>வேறுசெய் தறிவிராட் புருடனை யெனவுங்</p>
+                        <p>கரியது வாகிநின் றன்னவை முழுதுங் </p>
+                        <p>கழன்றன சம்சர்க்க வாக்கிய மதனாற் </p>
+                        <p>றுரியம துனையறி தொம்பத மகேசர்  </p>
+                        <p>சொல்லுமுற் பூரண சோதியி லென்னைப்  </p>
+                        <p><b>பரநன விற்</b>கர மணியென வருளப் </p>
+                        <p>பரிபூர்ண னேபள்ளி யெழுந்தரு ளாயே</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poem 5 -->
+            <div class="col-md-6 col-lg-5">
+                <div class="card poem-card">
+                    <div class="card-header" style="background-color: #878166; color: #fff;"><b>பாடல் - 5 (பர கனவு)</b></div>
+                    <div class="card-body">
+                        <p>காலமு ஞ்சதுருஞ் ஞானமு ஞேயமுங் </p>
+                        <p>கண்டன னென்னி லிராசத மாயை</p>
+                        <p>மேலொடு கீழ்பக்கம் விரவிய பின்முன் </p>
+                        <p>விரிவுறு மவைபவ மாயின வெல்லாஞ் </p>
+                        <p>சாலவு மிரணிய சர்ப்பமு மிதுதான்</p>
+                        <p>சதாசிவ கால <b>பரன்கன விது</b>வெப் </p>
+                        <p>பாலுயர் காரண வுபாதியென் றருளப் </p>
+                        <p>பரிபூர்ண னேபள்ளி யெழுந்தரு ளாயே</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poem 6 -->
+            <div class="col-md-6 col-lg-5">
+                <div class="card poem-card">
+                    <div class="card-header" style="background-color: #878166; color: #fff;"><b>பாடல் - 6 (பர சுழுத்தி)</b></div>
+                    <div class="card-body">
+                        <p>இதமக மறவிரு விவணமென் றருளி  </p>
+                        <p>யெழில்<b>பர சுழு த்தி</b>கா ரணாதியிற் றதுவா</p>
+                        <p>மதீதம திதுவசகல் லட்சணை யதனா </p>
+                        <p>லாசறு சொல்லுறு பாழிரண் டாம்பாழ் </p>
+                        <p>பொதுவது புகவது போந்தட மன்றிப் </p>
+                        <p>போதமு மழுங்குமவ் வியாகிர்த மிறுகல் </p>
+                        <p>பதியுடல் சதாசிவ பராசத்தி யருளப்  </p>
+                        <p>பரிபூர்ண னேபள்ளி யெழுந்தரு ளாயே</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poem 7 -->
+            <div class="col-md-6 col-lg-5">
+                <div class="card poem-card">
+                    <div class="card-header" style="background-color: #1b4ce1; color: #fff;"><b>பாடல் - 7 (குரு நனவு)</b></div>
+                    <div class="card-body">
+                        <p>அருவமு முருவமு மாகிய பொருளே </p>
+                        <p>யதீதமென் றருளிய தழித்தது வறிந்த</p>
+                        <p>பொருளுணர் வதுபரம் விசிட்டவாக் கியத்தாற்</p>
+                        <p>பொருவில்சிற் சுவலிதைதற் பதப்பொரு ளதுவா</p>
+                        <p>மிருநில னெனமுத லருளிய <b>பரிசே </b></p>
+                        <p>யெழிலிரு பூரணத் தியல்<b>குரு நனவிற்</b> </p>
+                        <p>பரமுற வெனதெழு பவமறுத் தருளப்</p>
+                        <p>பரிபூர்ண னேபள்ளி யெழுந்தரு ளாயே</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poem 8 (fixed stray </b>) -->
+            <div class="col-md-6 col-lg-5">
+                <div class="card poem-card">
+                    <div class="card-header" style="background-color: #1b4ce1; color: #fff;"><b>பாடல் - 8 (குரு கனவு)</b></div>
+                    <div class="card-body">
+                        <p>மலமறு <b>குருபதக் கனவினின்</b> மருவு </p>
+                        <p>மாசறு மாணவ சாத்திக மதனா</p>
+                        <p>லுலகமோ டுயிருதன் மாத்திர பரமா</p>
+                        <p>யுணர்ந்தது வேப்ரசர பத்தியென் றருளி</p>
+                        <p>நிலவிய பரமம தாயவை முழுது </p>
+                        <p>நிகழ்ந்ததின் றெற்கென நெடியவர் முதலே </p>
+                        <p> பலவுல குண்டது மிதுவென வருளப் </p>
+                        <p>பரிபூர்ண னேபள்ளி யெழுந்தரு ளாயே</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poem 9 (fixed stray </b>) -->
+            <div class="col-md-6 col-lg-5">
+                <div class="card poem-card">
+                    <div class="card-header" style="background-color: #1b4ce1; color: #fff;"><b>பாடல் - 9 (குரு சுழுத்தி)</b></div>
+                    <div class="card-body">
+                        <p>சீரணி சகதசகல் லட்சணை யதனாற்</p>
+                        <p>செகமுழு துண்டதொர் செருக்கற மிகவே</p>
+                        <p>யேர்<b>குருசுழுத்தி</b>யி லிருத்துப சாந்த </p>
+                        <p>மிருபதப் பொருளுமொன் றாக்கிநின் றொளிர</p>
+                        <p>வோருட லுயிரறி யொண்பர முழுது </p>
+                        <p>மொன்றுமுப் பாழுரை யிறந்திட மதுவாய்ப் </p>
+                        <p>பாரியல் சமைவுநற் பிருதுவியென் றருளப்</p>
+                        <p>பரிபூர்ண னேபள்ளி யெழுந்தரு ளாயே</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poem 10 (fixed malformed <b> spanning paragraphs) -->
+            <div class="col-md-6 col-lg-5">
+                <div class="card poem-card">
+                    <div class="card-header" style="background-color: #1b4ce1; color: #fff;"><b>பாடல் - 10 (குரு துரியம்)</b></div>
+                    <div class="card-body">
+                        <p>ஆரண முடிவினி லசிபதப் பொருளை</p>
+                        <p>பருளுமுப் பூரண பூணாபி ஷேகச் </p>
+                        <p>சீரணி யடிகளென் சென்னியிற் சேர்த்திச்</p>
+                        <p>செறிதர வகண்டவாக் கியமத னாலப் </p>
+                        <p><b>பூரண துரியமென் மோனநல் விழியாற்</b></p>
+                        <p><b>புணர்குரு சத்திய</b> மாதியுற் பலத்தின் </p>
+                        <p>பாரென நடித்துனி லயிக்கிய மாக்கு</p>
+                        <p>பரிபூர்ண னேபள்ளி யெழுந்தரு ளாயே</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="intro-section mb-5">
+            <p><b>மகான் தத்துவராயர் அடைந்த 13ஆவது குருதுரிய</b> நிலைக்கு மேல் உள்ள அனுபவங்களான <b>14.குரு துரியாதீதம்,15.சுத்த சிவ சாக்கிரம்,16.சுத்த சிவ சொப்பனம்,17.சுத்த சிவ சுழுத்தி,18.சுத்த சிவ துரியம்,19.சுத்த சிவ துரியாதீதம்</b> எல்லாம் <b>சுத்த சன்மார்க்க சாத்தியம் என்கின்றார் வள்ளலார்.</b></p>
+        </section>
+
+        <section class="intro-section mb-5">
+            <p><b>வள்ளலார் 19ஆவது நிலையான சுத்த சிவ துரியாதீதம் அடைந்து  அருட்பெருஞ்ஜோதியராக திகழ்கின்றார்.அதற்கான சான்று பாடல்கள் பின்வருமாறு.👇👇</b></p>
+        </section>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card poem-card">
+                    <div class="card-header" style="background-color: #28a745; color: #fff;">
+                        ஆறாம் திருமுறை : அனுபவ மாலை - வள்ளலார்
+                    </div>
+                    <div class="card-body">
+                        <p>தனிப்படும் ஓர் <b>சுத்தசிவசாக்கிர</b> நல் நிலையில் </p>
+                        <p>தனித்திருந்தேன் <b>சுத்தசிவ சொப்பனத்தே</b> சார்ந்தேன் </p>
+                        <p>கனிப்படுமெய்ச் <b>சுத்தசிவ சுழுத்தியிலே </b>களித்தேன்</p>
+                        <p>கலந்துகொண்டேன் <b>சுத்தசிவ துரியநிலை</b> அதுவாய்ச்</p>
+                        <p>செனிப்பிலதாய் எல்லாமாய் அல்லதுவாம் <b>சுத்த</b></p>
+                        <p><b>சிவதுரியா தீதத்தே</b> சிவமயமாய் நிறைந்தேன் </p>
+                        <p>இனிப்புறு சிற்சபை இறையைப் பெற்ற <b>பரி சதனால்</b></p>
+                        <p>இத்தனையும் பெற்றிங்கே இருக்கின்றேன் தோழி</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="intro-section mb-5">
+            <p><b>சரி நாம் எப்படி இந்த நிலையை அடைவது 🧐? அதற்கு வழி  சத்விசாரம், பரோபகாரம் ஆகும்..👇👇</b></p>
+            <p>சுத்த சன்மார்க்க சாதனம் 2 வகைப்படும்: பரோபகாரம், சத்விசாரம், பரோபகாரம் என்பது தேகத்தாலும், வாக்காலும், திரவியத்தாலும் உபகாரஞ் செய்வது. சத்விசாரம் என்பது நேரிடாத பக்ஷத்தில் ஆன்மநேய சம்பந்தமான தயாவிசாரத்தோடு இருப்பது. கடவுளது புகழை விசாரித்தல், ஆன்மாவின் உண்மையை விசாரித்தல், தன் சிறுமையைக் கடவுளிடத்தில் விண்ணப்பித்தல். <b>இந்த மார்க்கத்தால்தான் சுத்தமாதி மூன்று தேகங்களைப் பெற வேண்டும்.</b></p>
+        </section>
+
+        <!-- Second Header Section -->
+        <header class="text-center mb-4">
+            <h1 class="display-4"> சிதம்பரம் இராமலிங்கம்</h1>
+        </header>
+
+        <!-- Image Section -->
+        <section class="text-center mb-4">
+            <img src="images/vallalar.PNG" alt="Vallalar - சிதம்பரம் இராமலிங்கம்" class="img-fluid rounded" id="vallalarImage" style="max-width: 300px;">
+        </section>
+
+    </div>
+
+    <footer class="footer">
+        <p class="mb-1">&copy; 2026 சமரச சுத்த சன்மார்க்கம் | வள்ளலார் | அருட்பெருஞ்சோதி</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
